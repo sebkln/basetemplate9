@@ -10,5 +10,7 @@ setup.default {
   # lang = de
   resizeTextareas = 1
   resizeTextareas_MaxHeight = 500
+  resizeTextareas_Flexible = 1
   startModule = web_list
+  rteResize = 1
 }
