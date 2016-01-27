@@ -1,0 +1,88 @@
+####################################
+# EXT:news SETUP                   #
+####################################
+
+plugin.tx_news {
+  _LOCAL_LANG {
+    default {
+      # newsdate = date
+      # newsdownload = Download file
+      # dateFormat = %B %e, %Y
+    }
+    de {
+      # newsdate = Datum
+      # newsdownload = Datei herunterladen
+      # dateFormat = %d.%m.%Y
+    }
+    en {
+      # newsdate = date
+      # newsdownload = Download file
+      # dateFormat = %B %e, %Y
+    }
+  }
+
+
+  view {
+    // define several paths for partials and templates:
+    partialRootPaths >
+    partialRootPaths {
+      10 = EXT:news/Resources/Private/Partials/
+      20 = EXT:basetemplate7/Resources/Private/Partials/news/
+    }
+    templateRootPaths >
+    templateRootPaths {
+      10 = EXT:news/Resources/Private/Templates/
+      20 = EXT:basetemplate7/Resources/Private/Templates/news/
+    }
+  }
+
+
+  settings {
+    # listPid = 13
+
+    // remove default stylesheet:
+    cssFile >
+    
+    // remove placeholder image:
+    displayDummyIfNoMedia = 0
+    
+    // image sizes:
+    detail.media.image.maxWidth = 800
+    list.media.image.maxWidth = 120
+    list.media.image.maxHeight = 
+    
+    
+    // assign rel-attribute for FancyBox.
+    // you'll have to assign the class "fancybox" in partial "FalMediaImage.html", too!
+    detail.media.image.lightbox = fancybox
+    
+    # translate social media texts:
+    # facebookLocale = de_DE
+    # googlePlusLocale = de
+    # disqusLocale = de
+    
+    // Remove social media links:
+    detail.showSocialShareButtons = 0
+    
+    list.paginate {
+      itemsPerPage = 10
+      insertAbove = 0
+      insertBelow = 1
+      templatePath = EXT:basetemplate7/Resources/Private/Templates/news/ViewHelpers/Widget/Paginate/Index.html
+      prevNextHeaderTags = 0
+      maximumNumberOfLinks = 3
+    }
+    
+    link {
+      skipControllerAndAction = 1
+    }
+
+    // RSS feed category:
+    rss {
+      channel {
+        category = {$plugin.tx_news.rss.channel.category}
+      }
+    }
+  }
+}
+

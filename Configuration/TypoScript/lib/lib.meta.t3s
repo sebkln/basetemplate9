@@ -1,0 +1,24 @@
+lib.meta = TEXT
+lib.meta {
+  X-UA-Compatible = IE=edge,chrome=1
+  X-UA-Compatible.attribute = http-equiv
+
+  viewport = width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;
+  
+  description.field = description
+  description.ifEmpty = {$plugin.tx_basetemplate7.defaultMetaDescription}
+  dc.description < .description
+  og:description < .description
+
+  keywords.field = keywords
+  keywords.ifEmpty = {$plugin.tx_basetemplate7.defaultMetaKeywords}
+
+  og:site_name = My fancy Website
+  og:locale = en_GB
+  og:locale:alternate {
+    attribute = property
+    value {
+      1 = de_DE
+    }
+  }
+}

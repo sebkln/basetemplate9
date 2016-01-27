@@ -1,0 +1,33 @@
+####################################
+# Edit Backend form fields         #
+####################################
+
+TCEFORM {
+  tt_content {
+    header_layout {
+      altLabels {
+        0 = h1 - Page headline
+        1 =
+        2 = h2 - Normal headline
+        # 3 = h3 - another headline
+        # 4 = h4 - another headline
+        # 5 = h5 - another headline
+      }
+      removeItems = 1
+    }
+  }
+}
+
+
+
+
+####################################
+# Usage examples:                  #
+####################################
+
+/*
+// Rename fields:
+TCEFORM.pages.nav_title.label = Navigation Title
+// Hide fields:
+TCEFORM.tt_content.layout.disabled = 1
+*/

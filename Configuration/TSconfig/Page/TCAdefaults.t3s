@@ -1,0 +1,31 @@
+####################################
+# Default values for records:      #
+####################################
+
+TCAdefaults {
+  // don't hide new pages:
+  pages.hidden = 0
+
+  // Show images in preview (i.e. EXT:news):
+  sys_file_reference.showinpreview = 1
+}
+
+
+
+
+####################################
+# Usage examples:                  #
+####################################
+
+// open new content element as 'Text & Media'. The media is presented 'in text, right':
+/*
+TCAdefaults.tt_content.CType = textmedia
+TCAdefaults.tt_content.imageorient = 17
+*/
+
+
+// New content elements open with an existing example header, header type set to <h2>:
+/*
+TCAdefaults.tt_content.header = That's my default headline!
+TCAdefaults.tt_content.header_layout = 2
+*/

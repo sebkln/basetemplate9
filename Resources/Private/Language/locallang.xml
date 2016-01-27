@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="baseURL">baseURL of your website</label>
+			<label index="defaultDescription">Default meta description</label>
+			<label index="defaultKeywords">Default meta keywords</label>
+			<label index="headerComment">Add a copyright to the HTML source (as part of the TYPO3 comment)</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="baseURL">baseURL der Website</label>
+			<label index="defaultDescription">Standard Meta-Beschreibung</label>
+			<label index="defaultKeywords">Default meta keywords</label>
+			<label index="headerComment">Ergänze einen Copyright-Hinweis im Quelltext (als Teil des TYPO3 Kommentars)</label>
+		</languageKey>
+	</data>
+</T3locallangExt>

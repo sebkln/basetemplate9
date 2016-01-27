@@ -1,0 +1,16 @@
+# Main navigation:
+lib.mainNav = HMENU
+lib.mainNav {
+	wrap = <ul class="">|</ul>
+
+	1 = TMENU
+	1 {
+		NO = 1
+		NO.allWrap = <li class="">|</li>
+		NO.stdWrap.htmlSpecialChars = 1
+
+		CUR = 1
+		CUR.allWrap = <li class="current">|</li>
+		CUR.stdWrap.htmlSpecialChars = 1
+	}
+}

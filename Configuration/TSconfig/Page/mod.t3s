@@ -1,0 +1,34 @@
+mod {
+  web_list.enableDisplayBigControlPanel = activated
+  web_list.enableClipBoard = activated
+
+  
+  // Define BackendLayouts:
+  web_layout.BackendLayouts {
+    1 {
+      title = Default Layout (2 columns)
+      config {
+        backend_layout {
+          colCount = 3
+          rowCount = 1
+          rows {
+            1 {
+              columns {
+                1 {
+                  name = Main content
+                  colspan = 2
+                  colPos = 0
+                }
+                2 {
+                  name = Aside
+                  colPos = 2
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
