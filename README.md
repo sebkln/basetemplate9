@@ -1,4 +1,4 @@
-# Template Foundation TYPO3 6.2
+# Template Foundation TYPO3 7.6
 
 It is good practice to save your TypoScripts, HTML templates etc. in a separate extension. That way you can
 - use a distributed version control system to manage your configurations and templates
