@@ -117,26 +117,23 @@ page {
 ###################################
 
 // news title as <title> tag:
-# temp.newsTitle = RECORDS
-# temp.newsTitle {
-#   source = {GP:tx_news_pi1|news}
-#   source.insertData = 1
-#   tables = tx_news_domain_model_news
-#   conf {
-#     tx_news_domain_model_news >
-#     tx_news_domain_model_news = TEXT
-#     tx_news_domain_model_news {
-#       field = title
-#       noTrimWrap = |<title>|  :: My fancy Website</title>|
-#     }
-#   }
-# }
-
 # [globalVar = GP:tx_news_pi1|news > 0]
 # page.headerData {
 #   10 >
-#   10 = COA
-#   10 < temp.newsTitle
+#   10 = RECORDS
+#   10 {
+#     source = {GP:tx_news_pi1|news}
+#     source.insertData = 1
+#     tables = tx_news_domain_model_news
+#     conf {
+#       tx_news_domain_model_news >
+#       tx_news_domain_model_news = TEXT
+#       tx_news_domain_model_news {
+#         field = title
+#         noTrimWrap = |<title>|  :: My fancy Website</title>|
+#       }
+#     }
+#   }
 # }
 # [global]
 
