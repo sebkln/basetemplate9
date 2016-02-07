@@ -70,6 +70,9 @@ page {
       // numeration = ID of BackendLayout!
       1 = TEXT
       1.value = EXT:basetemplate7/Resources/Private/Templates/DemoTemplate.html
+      // important! If you set BackendLayouts through TSconfig, you MUST use the prefix 'pagets__':
+      # pagets__1 = TEXT
+      # pagets__1.value = EXT:basetemplate7/Resources/Private/Templates/DemoTemplate.html
       # 2 = TEXT
       # 2.value = EXT:basetemplate7/Resources/Private/Templates/Template-9-3.html
       default = TEXT
