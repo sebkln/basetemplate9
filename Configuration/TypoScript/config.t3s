@@ -29,7 +29,7 @@ config {
   // Language settings:
   language = en
   locale_all = en_GB.utf8
-  sys_language_uid = 1
+  sys_language_uid = 0
  
   sys_language_overlay = hideNonTranslated
   sys_language_mode = content_fallback
@@ -49,6 +49,6 @@ config {
 # config {
 #   language = de
 #   locale_all = de_DE.utf8
-#   sys_language_uid = 0
+#   sys_language_uid = 1
 # }
 # [global]
