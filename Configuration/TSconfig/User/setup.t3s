@@ -3,14 +3,14 @@
 ####################################
 
 setup.default {
-  thumbnailsByDefault = 1
-  titleLen = 60
-  edit_wideDocument = 1
-  edit_RTE = 1
-  # lang = de
-  resizeTextareas = 1
-  resizeTextareas_MaxHeight = 500
-  resizeTextareas_Flexible = 1
-  startModule = web_list
-  rteResize = 1
+    thumbnailsByDefault = 1
+    titleLen = 60
+    edit_wideDocument = 1
+    edit_RTE = 1
+    # lang = de
+    resizeTextareas = 1
+    resizeTextareas_MaxHeight = 500
+    resizeTextareas_Flexible = 1
+    startModule = web_list
+    rteResize = 1
 }

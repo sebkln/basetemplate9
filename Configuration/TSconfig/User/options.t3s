@@ -3,11 +3,11 @@
 ####################################
 
 options {
-  # pageTree.showPageIdWithTitle = 1
+    # pageTree.showPageIdWithTitle = 1
 
-  file_list.enableDisplayBigControlPanel = activated
-  file_list.enableDisplayThumbnails = activated
-  file_list.enableClipBoard = activated
+    file_list.enableDisplayBigControlPanel = activated
+    file_list.enableDisplayThumbnails = activated
+    file_list.enableClipBoard = activated
 
-  clearCache.system = 1
+    clearCache.system = 1
 }
