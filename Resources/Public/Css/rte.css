@@ -44,27 +44,27 @@ div.indent { margin-left: 2em; }
 
 
 /* Your own classes and additional HTML tags. 
-   The HTML tags before class names ARE necessary and have to match the tags that were set in TSconfig!
-   Any declarations set here are only for display in the Editor, not in the Frontend. */
+     The HTML tags before class names ARE necessary and have to match the tags that were set in TSconfig!
+     Any declarations set here are only for display in the Editor, not in the Frontend. */
 
 /*
 p.fooclass {
-  color: red;
+    color: red;
 }
 span.barclass {
-  color: blue;
+    color: blue;
 }
 
 code {
-  background-color: #ddd;
-  font-family: monospace,serif;
-  padding: 2px;
+    background-color: #ddd;
+    font-family: monospace,serif;
+    padding: 2px;
 }
 
 pre {
-  background-color: #444444;
-  color: #fff;
-  font-family: monospace,serif;
-  padding: 4px;
+    background-color: #444444;
+    color: #fff;
+    font-family: monospace,serif;
+    padding: 4px;
 }
 */
