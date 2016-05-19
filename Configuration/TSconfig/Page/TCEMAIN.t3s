@@ -1,22 +1,22 @@
 TCEMAIN {
-  # Setting page permissions:
-  permissions {
-    # assign a BE user group's UID to all new and copied pages:
-    groupid = 1
+    // Setting page permissions:
+    permissions {
+        // assign a BE user group's UID to all new and copied pages:
+        groupid = 1
 
-    # set permissions for owner-user, owner-group and everybody:
-    user = show,editcontent,edit,delete,new
-    group = show,editcontent,edit,new
-    everybody =
-  }
+        // set permissions for owner-user, owner-group and everybody:
+        user = show,editcontent,edit,delete,new
+        group = show,editcontent,edit,new
+        everybody =
+    }
 
 
-  # When copying content or pages:
-  table.tt_content {
-    # disablePrependAtCopy = 1
-    # disableHideAtCopy = 1
-  }
-  table.pages {
-    # disablePrependAtCopy = 1
-  }
+    // When copying content or pages:
+    table.tt_content {
+        # disablePrependAtCopy = 1
+        # disableHideAtCopy = 1
+    }
+    table.pages {
+        # disablePrependAtCopy = 1
+    }
 }

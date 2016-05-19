@@ -1,39 +1,38 @@
 mod {
-  web_list.enableDisplayBigControlPanel = activated
-  web_list.enableClipBoard = activated
+    web_list.enableDisplayBigControlPanel = activated
+    web_list.enableClipBoard = activated
 
-  
-  // Define BackendLayouts.
-  // You have to prepend "pagets__" to all BackendLayout UIDs when using it to select the template, e.g.:
-  // pagets__1 = TEXT
-  // pagets__1.value = EXT:basetemplate7/Resources/Private/Templates/DemoTemplate.html
-  /*
-  web_layout.BackendLayouts {
-    1 {
-      title = Default Layout (2 columns)
-      config {
-        backend_layout {
-          colCount = 3
-          rowCount = 1
-          rows {
-            1 {
-              columns {
-                1 {
-                  name = Main content
-                  colspan = 2
-                  colPos = 0
+    
+    // Define BackendLayouts.
+    // You have to prepend "pagets__" to all BackendLayout UIDs when using it to select the template, e.g.:
+    // pagets__1 = TEXT
+    // pagets__1.value = EXT:basetemplate7/Resources/Private/Templates/DemoTemplate.html
+    /*
+    web_layout.BackendLayouts {
+        1 {
+            title = Default Layout (2 columns)
+            config {
+                backend_layout {
+                    colCount = 3
+                    rowCount = 1
+                    rows {
+                        1 {
+                            columns {
+                                1 {
+                                    name = Main content
+                                    colspan = 2
+                                    colPos = 0
+                                }
+                                2 {
+                                    name = Aside
+                                    colPos = 2
+                                }
+                            }
+                        }
+                    }
                 }
-                2 {
-                  name = Aside
-                  colPos = 2
-                }
-              }
             }
-          }
         }
-      }
     }
-  }
-  */
+    */
 }
-

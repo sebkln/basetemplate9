@@ -3,11 +3,11 @@
 ####################################
 
 TCAdefaults {
-  // don't hide new pages:
-  pages.hidden = 0
+    // don't hide new pages:
+    pages.hidden = 0
 
-  // Show images in preview (i.e. EXT:news):
-  sys_file_reference.showinpreview = 1
+    // Show images in preview (i.e. EXT:news):
+    sys_file_reference.showinpreview = 1
 }
 
 

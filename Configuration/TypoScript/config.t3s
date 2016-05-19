@@ -1,54 +1,54 @@
 config {
-  headerComment = {$plugin.tx_basetemplate7.headerComment}
-  headerComment.if.isTrue = {$plugin.tx_basetemplate7.headerComment}
+    headerComment = {$plugin.tx_basetemplate7.headerComment}
+    headerComment.if.isTrue = {$plugin.tx_basetemplate7.headerComment}
 
-  // alternative PageRenderer:
-	# pageRendererTemplateFile = EXT:basetemplate7/Resources/Private/Templates/PageRenderer.html
+    // alternative PageRenderer:
+    # pageRendererTemplateFile = EXT:basetemplate7/Resources/Private/Templates/PageRenderer.html
 
-  doctype = html5
+    doctype = html5
 
-  noPageTitle = 1
+    noPageTitle = 1
 
-  baseURL = {$plugin.tx_basetemplate7.baseURL}
-  // Prefixing all links to get absolute link paths (i.e mandatory for RSS feeds from EXT:news):
-  absRefPrefix = {$plugin.tx_basetemplate7.baseURL}/
-  linkVars = L(0-1)
-
-
-  // Write the email address in Unicode. This works even without JavaScript enabled!
-  spamProtectEmailAddresses = ascii
-  // Replace the @ with this string to further mock spam bots:
-  spamProtectEmailAddresses_atSubst = <span style='display:none'>whatever</span>@
+    baseURL = {$plugin.tx_basetemplate7.baseURL}
+    // Prefixing all links to get absolute link paths (i.e mandatory for RSS feeds from EXT:news):
+    absRefPrefix = {$plugin.tx_basetemplate7.baseURL}/
+    linkVars = L(0-1)
 
 
-  // Deactivate all HTML comments from TYPO3, e.g.:
-  // <!--  CONTENT ELEMENT, uid:37/text [begin] -->
-  disablePrefixComment = 1
+    // Write the email address in Unicode. This works even without JavaScript enabled!
+    spamProtectEmailAddresses = ascii
+    // Replace the @ with this string to further mock spam bots:
+    spamProtectEmailAddresses_atSubst = <span style='display:none'>whatever</span>@
 
 
-  // Language settings:
-  language = en
-  locale_all = en_GB.utf8
-  sys_language_uid = 0
+    // Deactivate all HTML comments from TYPO3, e.g.:
+    // <!--  CONTENT ELEMENT, uid:37/text [begin] -->
+    disablePrefixComment = 1
+
+
+    // Language settings:
+    language = en
+    locale_all = en_GB.utf8
+    sys_language_uid = 0
  
-  sys_language_overlay = hideNonTranslated
-  sys_language_mode = content_fallback
+    sys_language_overlay = hideNonTranslated
+    sys_language_mode = content_fallback
 
 
-  // RealURL related:
-  prefixLocalAnchors = all
-  simulateStaticDocuments = 0
-  tx_realurl_enable = 1
+    // RealURL related:
+    prefixLocalAnchors = all
+    simulateStaticDocuments = 0
+    tx_realurl_enable = 1
 }
 
 
 
 
 // first foreign language:
-# [globalVar = GP:L=1]
+[globalVar = GP:L=1]
 # config {
-#   language = de
-#   locale_all = de_DE.utf8
-#   sys_language_uid = 1
+#     language = de
+#     locale_all = de_DE.utf8
+#     sys_language_uid = 1
 # }
 # [global]

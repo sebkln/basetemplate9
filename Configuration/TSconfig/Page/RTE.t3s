@@ -15,35 +15,35 @@
 ####################################
 
 RTE.default {
-  // Show these buttons:
-  showButtons (
-    formatblock, blockstyle, textstyle,
-    undo, redo, left, center, right, justifyfull,
-    bold, italic, underline, subscript, superscript, code,
-    orderedlist, unorderedlist, link, unlink,
-    image, textcolor, insertcharacter,
-    chMode, removeformat, pastetoggle, pastebehaviour, findreplace,
-    table, tableproperties, toggleborders, tablerestyle,
-    rowproperties, rowinsertabove,rowinsertunder, rowdelete, rowsplit, 
-    columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit,
-    cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge
-  )
+    // Show these buttons:
+    showButtons (
+        formatblock, blockstyle, textstyle,
+        undo, redo, left, center, right, justifyfull,
+        bold, italic, underline, subscript, superscript, code,
+        orderedlist, unorderedlist, link, unlink,
+        image, textcolor, insertcharacter,
+        chMode, removeformat, pastetoggle, pastebehaviour, findreplace,
+        table, tableproperties, toggleborders, tablerestyle,
+        rowproperties, rowinsertabove,rowinsertunder, rowdelete, rowsplit, 
+        columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit,
+        cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge
+    )
 
 
-  // Sort the buttons in this order. Buttons which aren't listed in 'toolbarOrder' are NOT displayed!
-  // Additional options: space, bar, linebreak
-  toolbarOrder (
-    formatblock, blockstyle, textstyle, linebreak,
-    undo, redo, bar, left, center, right, justifyfull, bar,
-    bold, italic, underline, subscript, superscript, code, bar,
-    orderedlist, unorderedlist, bar, link, unlink, bar,
-    image, textcolor, insertcharacter, bar,
-    chMode, removeformat, pastetoggle, pastebehaviour, findreplace, linebreak,
-    table, tableproperties, toggleborders, tablerestyle, bar,
-    rowproperties, rowinsertabove,rowinsertunder, rowdelete, rowsplit, bar, 
-    columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit, bar,
-    cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge
-  )
+    // Sort the buttons in this order. Buttons which aren't listed in 'toolbarOrder' are NOT displayed!
+    // Additional options: space, bar, linebreak
+    toolbarOrder (
+        formatblock, blockstyle, textstyle, linebreak,
+        undo, redo, bar, left, center, right, justifyfull, bar,
+        bold, italic, underline, subscript, superscript, code, bar,
+        orderedlist, unorderedlist, bar, link, unlink, bar,
+        image, textcolor, insertcharacter, bar,
+        chMode, removeformat, pastetoggle, pastebehaviour, findreplace, linebreak,
+        table, tableproperties, toggleborders, tablerestyle, bar,
+        rowproperties, rowinsertabove,rowinsertunder, rowdelete, rowsplit, bar, 
+        columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit, bar,
+        cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge
+    )
 }
 
 
@@ -55,11 +55,11 @@ RTE.default {
 
 // Remove <select> items:
 RTE.default {
-  buttons.formatblock.removeItems = address,h5,h6,article,footer,header,nav,section,aside,div
-  removeTags := addToList (address,h5,h6,article,footer,header,nav,section,aside,div)
-  
-  // want to remove 'blockstyle' items in the select menu? Just delete them in the rte.css.
-  proc.allowedClasses := removeFromList(csc-frame-frame1, csc-frame-frame2)
+    buttons.formatblock.removeItems = address,h5,h6,article,footer,header,nav,section,aside,div
+    removeTags := addToList (address,h5,h6,article,footer,header,nav,section,aside,div)
+    
+    // want to remove 'blockstyle' items in the select menu? Just delete them in the rte.css.
+    proc.allowedClasses := removeFromList(csc-frame-frame1, csc-frame-frame2)
 }
 
 // Give RTE images a custom class (you'll have to allow it in 'lib.parseFunc_RTE', too!):
@@ -76,24 +76,24 @@ RTE.default.removeTags := addToList (font)
 ####################################
 
 RTE {
-  default {
-    // Your classes have to exist in this css file!
-    // This stylesheet is NOT to be included in frontend, though. Just put the classes in your normal Frontend stylesheet, too.
-    contentCSS = EXT:basetemplate7/Resources/Public/Css/rte.css
-  }
+    default {
+        // Your classes have to exist in this css file!
+        // This stylesheet is NOT to be included in frontend, though. Just put the classes in your normal Frontend stylesheet, too.
+        contentCSS = EXT:basetemplate7/Resources/Public/Css/rte.css
+    }
 
-  // blockstyle: Set a class for a block element, e.g.: <p>
-  # classes.fooclass.name = My class "foo"
-  # default.buttons.blockstyle.classesTable := addToList(fooclass)
-  # default.buttons.blockstyle.tags.p.allowedClasses := addToList (fooclass)
+    // blockstyle: Set a class for a block element, e.g.: <p>
+    # classes.fooclass.name = My class "foo"
+    # default.buttons.blockstyle.classesTable := addToList(fooclass)
+    # default.buttons.blockstyle.tags.p.allowedClasses := addToList (fooclass)
 
-  // textstyle: Set a class for an inline element, e.g.: <span>, <a>
-  # classes.barclass.name = My class "bar"
-  # default.buttons.textstyle.classesTable := addToList(barclass)
-  # default.buttons.textstyle.tags.span.allowedClasses := addToList (barclass)
+    // textstyle: Set a class for an inline element, e.g.: <span>, <a>
+    # classes.barclass.name = My class "bar"
+    # default.buttons.textstyle.classesTable := addToList(barclass)
+    # default.buttons.textstyle.tags.span.allowedClasses := addToList (barclass)
 
-  // Allow these classes to be processed (saved to database):
-  # default.proc.allowedClasses := addToList (barclass, fooclass)
+    // Allow these classes to be processed (saved to database):
+    # default.proc.allowedClasses := addToList (barclass, fooclass)
 }
 
 
@@ -106,19 +106,19 @@ RTE {
 // Want code blocks on your website? Enable this:
 # RTE.default.showButtons := addToList (formatblock,code)
 # RTE.default.proc {
-#   allowTags := addToList(code,pre)
-#   allowTagsOutside := addToList(code,pre)
-#   overruleMode = ts_css,cleanenc
+#     allowTags := addToList(code,pre)
+#     allowTagsOutside := addToList(code,pre)
+#     overruleMode = ts_css,cleanenc
 
-#   // content to database:
-#   HTMLparser_rte {
-#     allowTags < RTE.default.proc.allowTags
-#   }
+#     // content to database:
+#     HTMLparser_rte {
+#         allowTags < RTE.default.proc.allowTags
+#     }
 
-#   // Entry HTML parser:
-#   entryHTMLparser_db {
-#     allowTags < RTE.default.proc.allowTags
-#   }
+#     // Entry HTML parser:
+#     entryHTMLparser_db {
+#         allowTags < RTE.default.proc.allowTags
+#     }
 # }
 
 
@@ -131,14 +131,14 @@ RTE {
 // Create colors, 6 digit HEX codes only. Color names are arbitrary.
 # RTE.default.colors = foo-color, bar-color
 # RTE.colors {
-#   foo-color {
-#     name = My color 'foo'
-#     value = #ff0000
-#   }
-#   bar-color {
-#     name = My color 'bar'
-#     value = #00ff00
-#   }
+#     foo-color {
+#         name = My color 'foo'
+#         value = #ff0000
+#     }
+#     bar-color {
+#         name = My color 'bar'
+#         value = #00ff00
+#     }
 # }
 
 // Hide default colors. Not mandatory for defining its own colors.

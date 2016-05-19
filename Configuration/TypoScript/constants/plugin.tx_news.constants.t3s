@@ -3,15 +3,15 @@
 ####################################
 
 plugin.tx_news {
-  // RSS feed:
-  rss.channel {
-    title = Title
-    description = Fancy website news
-    link = http://www.example.org/news/
-    # language = de-de
-    language = en-gb
-    copyright = John Doe
-    category = News
-    generator = TYPO3 EXT:news
-  }
+    // RSS feed:
+    rss.channel {
+        title = Title
+        description = Fancy website news
+        link = http://www.example.org/news/
+        # language = de-de
+        language = en-gb
+        copyright = John Doe
+        category = News
+        generator = TYPO3 EXT:news
+    }
 }
