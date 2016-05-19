@@ -32,6 +32,7 @@ mod {
                     }
                 }
             }
+            icon = EXT:basetemplate7/Resources/Public/Images/BackendLayouts/BELayout_9-3.png
         }
     }
     */
