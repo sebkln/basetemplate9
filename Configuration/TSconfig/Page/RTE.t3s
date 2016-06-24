@@ -153,3 +153,25 @@ RTE {
 
 // Hide default colors. Not mandatory for defining its own colors.
 # RTE.default.disableColorPicker = 1
+
+
+
+
+####################################
+# REMOVE LINK TITLES               #
+####################################
+
+#RTE {
+#    classesAnchor.externalLink.titleText >
+#    classesAnchor.externalLink.altText >
+#    classesAnchor.externalLinkInNewWindow.titleText >
+#    classesAnchor.externalLinkInNewWindow.altText >
+#    classesAnchor.internalLink.titleText >
+#    classesAnchor.internalLink.altText >
+#    classesAnchor.internalLinkInNewWindow.titleText >
+#    classesAnchor.internalLinkInNewWindow.altText >
+#    classesAnchor.mail.titleText >
+#    classesAnchor.mail.altText >
+#    classesAnchor.download.titleText >
+#    classesAnchor.download.altText >
+#}
