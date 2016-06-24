@@ -10,7 +10,7 @@ mod {
     /*
     web_layout.BackendLayouts {
         1 {
-            title = Default Layout (2 columns)
+            title = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:BackendLayouts.title.1
             config {
                 backend_layout {
                     colCount = 3
@@ -19,12 +19,12 @@ mod {
                         1 {
                             columns {
                                 1 {
-                                    name = Main content
+                                    name = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:BackendLayouts.col.main
                                     colspan = 2
                                     colPos = 0
                                 }
                                 2 {
-                                    name = Aside
+                                    name = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:BackendLayouts.col.sidebar
                                     colPos = 2
                                 }
                             }

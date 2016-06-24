@@ -40,6 +40,18 @@
                 <source>Hidden</source>
                 <target>Verborgen</target>
             </trans-unit>
+            <trans-unit id="BackendLayouts.title.1">
+                <source>Default Layout (2 columns)</source>
+                <target>Standard-Layout (2-spaltig)</target>
+            </trans-unit>
+            <trans-unit id="BackendLayouts.col.main">
+                <source>Main content</source>
+                <target>Hauptspalte</target>
+            </trans-unit>
+            <trans-unit id="BackendLayouts.col.sidebar">
+                <source>Sidebar</source>
+                <target>Seitenleiste</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
