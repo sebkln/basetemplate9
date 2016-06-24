@@ -15,6 +15,16 @@
 ####################################
 
 RTE.default {
+    // Rename RTE headings and sort block items:
+    buttons.formatblock.items {
+        h1.label = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.1
+        h2.label = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.2
+        h3.label = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.3
+        h4.label = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.4
+    }
+    buttons.formatblock.orderItems = none, p, h1, h2, h3, h4, pre
+
+
     // Show these buttons:
     showButtons (
         formatblock, blockstyle, textstyle,
