@@ -20,6 +20,26 @@
                 <source>Add a copyright to the HTML source (as part of the TYPO3 comment)</source>
                 <target>Ergänze einen Copyright-Hinweis im Quelltext (als Teil des TYPO3 Kommentars)</target>
             </trans-unit>
+            <trans-unit id="header_layout.altLabels.1">
+                <source>(h1) Page headline</source>
+                <target>(h1) Seitenüberschrift</target>
+            </trans-unit>
+            <trans-unit id="header_layout.altLabels.2">
+                <source>(h2) Content headline</source>
+                <target>(h2) Inhaltsüberschrift</target>
+            </trans-unit>
+            <trans-unit id="header_layout.altLabels.3">
+                <source>(h3) Subline</source>
+                <target>(h3) Zwischenüberschrift</target>
+            </trans-unit>
+            <trans-unit id="header_layout.altLabels.4">
+                <source>(h4) Smaller subline</source>
+                <target>(h4) Kleine Zwischenüberschrift</target>
+            </trans-unit>
+            <trans-unit id="header_layout.altLabels.100">
+                <source>Hidden</source>
+                <target>Verborgen</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

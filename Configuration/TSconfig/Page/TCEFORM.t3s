@@ -6,14 +6,13 @@ TCEFORM {
     tt_content {
         header_layout {
             altLabels {
-                0 = h1 - Page headline
-                1 =
-                2 = h2 - Normal headline
-                # 3 = h3 - another headline
-                # 4 = h4 - another headline
-                # 5 = h5 - another headline
+                1 = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.1
+                2 = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.2
+                3 = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.3
+                4 = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.4
+                100 = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.100
             }
-            removeItems = 1
+            keepItems = 1,2,3,4,100
         }
     }
 }

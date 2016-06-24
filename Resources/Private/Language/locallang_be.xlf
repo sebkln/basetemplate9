@@ -15,6 +15,21 @@
             <trans-unit id="constants.label.headerComment">
                 <source>Add a copyright to the HTML source (as part of the TYPO3 comment)</source>
             </trans-unit>
+            <trans-unit id="header_layout.altLabels.1">
+                <source>(h1) Page headline</source>
+            </trans-unit>
+            <trans-unit id="header_layout.altLabels.2">
+                <source>(h2) Content headline</source>
+            </trans-unit>
+            <trans-unit id="header_layout.altLabels.3">
+                <source>(h3) Subline</source>
+            </trans-unit>
+            <trans-unit id="header_layout.altLabels.4">
+                <source>(h4) Smaller subline</source>
+            </trans-unit>
+            <trans-unit id="header_layout.altLabels.100">
+                <source>Hidden</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
