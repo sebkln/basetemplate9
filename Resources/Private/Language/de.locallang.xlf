@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2016-06-18T12:03:24Z"
+          product-name="basetemplate7" target-language="de">
+        <header/>
+        <body>
+            <trans-unit id="dummy">
+                <source>Use this file for localized data in the Frontend, e.g. in Fluid Templates</source>
+                <target>Verwende diese Datei für lokalisierte Inhalte im Frontend, z.B. in Fluid Templates</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
