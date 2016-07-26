@@ -40,8 +40,14 @@ lib.parseFunc_RTE {
         // List processing
         dl < .div
         dd < .div
-        ol < .div
-        ul < .div
+
+        // prevent empty <p> tags in nested lists:
+        ol >
+        ul >
+        ol.stripNL = 1
+        ol.stdWrap.parseFunc =< lib.parseFunc
+        ul.stripNL = 1
+        ul.stdWrap.parseFunc =< lib.parseFunc
 
         pre {
             stripNL = 1
