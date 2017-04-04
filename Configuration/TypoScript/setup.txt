@@ -52,7 +52,7 @@ page {
     }
 
     // include JavaScript before </head>:
-    includeJSlibs {
+    includeJSLibs {
         
     }
 
