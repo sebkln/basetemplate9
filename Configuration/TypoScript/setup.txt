@@ -27,8 +27,6 @@ page = PAGE
 page {
     typeNum = 0
 
-    shortcutIcon = EXT:basetemplate8/Resources/Public/Images/Favicons/favicon.ico
-
     meta < lib.meta
 
     headerData {
