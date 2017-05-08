@@ -43,7 +43,8 @@ page {
         10 = TEXT
         10 {
             field = subtitle // title
-            noTrimWrap = |<title>| :: My fancy Website</title>|
+            noTrimWrap = |<title>| :: {$plugin.tx_basetemplate8.websiteName}</title>|
+            noTrimWrap.stdWrap.insertData = 1
         }
     }
     
