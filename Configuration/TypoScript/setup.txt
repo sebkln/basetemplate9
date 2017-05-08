@@ -1,5 +1,5 @@
 ###################################
-# Starter template TYPO3 7.6      #
+# Starter template TYPO3 v8 LTS   #
 # MAIN SETUP                      #
 ###################################
 
