@@ -22,8 +22,8 @@ If you intend using **Bootstrap**, you definitely should check [bootstrap_packag
 
 1. Copy this extension into the folder **typo3conf/ext/**
 2. You may want to rename the extension.
-    1. Rename the folder from `basetemplate7` to your desired name, e.g. `clienttemplates`. **Have the naming conventions for extensions in mind!**<sup>[1](#namingconvention)</sup>
-    2. Search and replace all occurences of `basetemplate7` with the new chosen name. Replacing is fast and easy if you use a professional text editor and don't use underscores.<sup>[2](#underscores)</sup>
+    1. Rename the folder from `basetemplate8` to your desired name, e.g. `clienttemplates`. **Have the naming conventions for extensions in mind!**<sup>[1](#namingconvention)</sup>
+    2. Search and replace all occurences of `basetemplate8` with the new chosen name. Replacing is fast and easy if you use a professional text editor and don't use underscores.<sup>[2](#underscores)</sup>
 3. Open TYPO3 extension Manager and install the extension. From that moment the TSconfig is used.
 4. Include it as a Static Template in your Root Template.
 5. Begin to add your Templates and adapt the configuration. Make it yours!

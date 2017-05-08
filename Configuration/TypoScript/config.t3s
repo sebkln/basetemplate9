@@ -1,20 +1,20 @@
 config {
-    headerComment = {$plugin.tx_basetemplate7.headerComment}
-    headerComment.if.isTrue = {$plugin.tx_basetemplate7.headerComment}
+    headerComment = {$plugin.tx_basetemplate8.headerComment}
+    headerComment.if.isTrue = {$plugin.tx_basetemplate8.headerComment}
 
     // Secure Headers (see https://www.owasp.org/index.php/OWASP_Secure_Headers_Project):
     additionalHeaders = strict-transport-security: maxage= 31536000; includeSubdomains | x-frame-options: SAMEORIGIN | X-XSS-Protection: 1; mode=block | X-Content-Type-Options: nosniff | X-Powered-By: nothing
 
     // alternative PageRenderer:
-    # pageRendererTemplateFile = EXT:basetemplate7/Resources/Private/Templates/PageRenderer.html
+    # pageRendererTemplateFile = EXT:basetemplate8/Resources/Private/Templates/PageRenderer.html
 
     doctype = html5
 
     noPageTitle = 1
 
-    baseURL = {$plugin.tx_basetemplate7.baseURL}
+    baseURL = {$plugin.tx_basetemplate8.baseURL}
     // Prefixing all links to get absolute link paths (i.e mandatory for RSS feeds from EXT:news):
-    absRefPrefix = {$plugin.tx_basetemplate7.baseURL}/
+    absRefPrefix = {$plugin.tx_basetemplate8.baseURL}/
     linkVars = L(0-1)
 
 

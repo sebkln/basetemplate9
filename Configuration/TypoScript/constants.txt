@@ -1,12 +1,12 @@
 <INCLUDE_TYPOSCRIPT: source="DIR: ./constants" extensions="t3s">
 
-plugin.tx_basetemplate7 {
-    #cat=Website Templates/links/10; type=string;label=LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:constants.label.baseURL
+plugin.tx_basetemplate8 {
+    #cat=Website Templates/links/10; type=string;label=LLL:EXT:basetemplate8/Resources/Private/Language/locallang_be.xlf:constants.label.baseURL
     baseURL = 
-    #cat=Website Templates/text/10; type=string;label=LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:constants.label.defaultDescription
+    #cat=Website Templates/text/10; type=string;label=LLL:EXT:basetemplate8/Resources/Private/Language/locallang_be.xlf:constants.label.defaultDescription
     defaultMetaDescription = 
-    #cat=Website Templates/text/20; type=string;label=LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:constants.label.defaultKeywords
+    #cat=Website Templates/text/20; type=string;label=LLL:EXT:basetemplate8/Resources/Private/Language/locallang_be.xlf:constants.label.defaultKeywords
     defaultMetaKeywords = 
-    #cat=Website Templates/text/40; type=string;label=LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:constants.label.headerComment
+    #cat=Website Templates/text/40; type=string;label=LLL:EXT:basetemplate8/Resources/Private/Language/locallang_be.xlf:constants.label.headerComment
     headerComment = 
 }

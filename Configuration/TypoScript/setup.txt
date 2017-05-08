@@ -7,7 +7,7 @@
 <INCLUDE_TYPOSCRIPT: source="DIR: ./lib" extensions="t3s">
 <INCLUDE_TYPOSCRIPT: source="DIR: ./plugin" extensions="t3s">
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:basetemplate7/Configuration/TypoScript/config.t3s">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:basetemplate8/Configuration/TypoScript/config.t3s">
 
 
 
@@ -27,7 +27,7 @@ page = PAGE
 page {
     typeNum = 0
 
-    shortcutIcon = EXT:basetemplate7/Resources/Public/Images/Favicons/favicon.ico
+    shortcutIcon = EXT:basetemplate8/Resources/Public/Images/Favicons/favicon.ico
 
     meta < lib.meta
 
@@ -48,7 +48,7 @@ page {
     }
     
     includeCSS {
-        demo = EXT:basetemplate7/Resources/Public/Css/demo.css
+        demo = EXT:basetemplate8/Resources/Public/Css/demo.css
     }
 
     // include JavaScript before </head>:
@@ -69,22 +69,22 @@ page {
             key.data = pagelayout
             // numeration = ID of BackendLayout!
             1 = TEXT
-            1.value = EXT:basetemplate7/Resources/Private/Templates/DemoTemplate.html
+            1.value = EXT:basetemplate8/Resources/Private/Templates/DemoTemplate.html
             // important! If you set BackendLayouts through TSconfig, you MUST use the prefix 'pagets__':
             # pagets__1 = TEXT
-            # pagets__1.value = EXT:basetemplate7/Resources/Private/Templates/DemoTemplate.html
+            # pagets__1.value = EXT:basetemplate8/Resources/Private/Templates/DemoTemplate.html
             # 2 = TEXT
-            # 2.value = EXT:basetemplate7/Resources/Private/Templates/Template-9-3.html
+            # 2.value = EXT:basetemplate8/Resources/Private/Templates/Template-9-3.html
             default = TEXT
-            default.value = EXT:basetemplate7/Resources/Private/Templates/DemoTemplate.html
+            default.value = EXT:basetemplate8/Resources/Private/Templates/DemoTemplate.html
         }
 
         layoutRootPaths {
-            10 = EXT:basetemplate7/Resources/Private/Layouts/
+            10 = EXT:basetemplate8/Resources/Private/Layouts/
         }
 
         partialRootPaths {
-            10 = EXT:basetemplate7/Resources/Private/Partials/
+            10 = EXT:basetemplate8/Resources/Private/Partials/
         }
 
         settings {
