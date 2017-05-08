@@ -4,10 +4,6 @@
           product-name="basetemplate8" target-language="de">
         <header/>
         <body>
-            <trans-unit id="constants.label.baseURL">
-                <source>baseURL of your website</source>
-                <target>baseURL der Website</target>
-            </trans-unit>
             <trans-unit id="constants.label.defaultDescription">
                 <source>Default meta description</source>
                 <target>Standard Meta-Beschreibung</target>

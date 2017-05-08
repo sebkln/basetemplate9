@@ -12,9 +12,8 @@ config {
 
     noPageTitle = 1
 
-    baseURL = {$plugin.tx_basetemplate8.baseURL}
     // Prefixing all links to get absolute link paths (i.e mandatory for RSS feeds from EXT:news):
-    absRefPrefix = {$plugin.tx_basetemplate8.baseURL}/
+    absRefPrefix = /
     linkVars = L(0-1)
 
 
