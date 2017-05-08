@@ -2,15 +2,26 @@ body {
     background-color: #99cc99;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
-    text-align: center;
 }
+
+
 .wrapper {
     background-color: #fff;
     border-radius: .5em;
     margin: 3rem auto 0;
-    padding: 1.25em ;
-    width: 20rem;
+    padding: 1.25em;
+    text-align: left;
+    max-width: 80rem;
 }
+
+
 .header {
-    padding: 2em 0;
+    padding: 2em 0 1em;
+    text-align: center;
+}
+
+
+.success {
+    margin-bottom: 4em;
+    text-align: center;
 }

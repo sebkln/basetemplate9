@@ -98,6 +98,8 @@ page {
         variables {
             success = TEXT
             success.value = <h2>You successfully installed the Template Extension.</h2><p>Now you can start implementing your own templates and configurations. Have fun!</p>
+
+            content_0 < styles.content.get
         }
     }
 }
