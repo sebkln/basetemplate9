@@ -131,7 +131,7 @@ page {
 #         tables = tx_news_domain_model_news
 #         conf {
 #             tx_news_domain_model_news >
-#             tx_news_domain_model_newgits = TEXT
+#             tx_news_domain_model_news = TEXT
 #             tx_news_domain_model_news {
 #                 field = title
 #                 noTrimWrap = |<title>| :: {$plugin.tx_basetemplate8.websiteName}</title>|
