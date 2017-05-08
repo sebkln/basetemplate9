@@ -47,7 +47,11 @@ page {
     }
     
     includeCSS {
-        demo = EXT:basetemplate8/Resources/Public/Css/demo.css
+        style = EXT:basetemplate8/Resources/Public/Css/style.css
+        style.media = all
+        webfont = https://fonts.googleapis.com/css?family=Ubuntu:300,500,500i
+        webfont.external = 1
+        webfont.media = all
     }
 
     // include JavaScript before </head>:
