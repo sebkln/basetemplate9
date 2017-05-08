@@ -1,0 +1,31 @@
+mod.web_layout.BackendLayouts {
+    // Define BackendLayouts.
+    // You have to prepend "pagets__" to all BackendLayout UIDs when using it to select the template, e.g.:
+    // pagets__1 = TEXT
+    // pagets__1.value = EXT:basetemplate7/Resources/Private/Templates/DemoTemplate.html
+    1 {
+        title = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:BackendLayouts.title.1
+        config {
+            backend_layout {
+                colCount = 3
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:BackendLayouts.col.main
+                                colspan = 2
+                                colPos = 0
+                            }
+                            2 {
+                                name = LLL:EXT:basetemplate7/Resources/Private/Language/locallang_be.xlf:BackendLayouts.col.sidebar
+                                colPos = 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        icon = EXT:basetemplate7/Resources/Public/Images/BackendLayouts/BELayout_9-3.png
+    }
+}

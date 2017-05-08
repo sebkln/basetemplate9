@@ -1,3 +1,7 @@
+####################################
+# Page permissions et al.          #
+####################################
+
 TCEMAIN {
     // Setting page permissions:
     permissions {
