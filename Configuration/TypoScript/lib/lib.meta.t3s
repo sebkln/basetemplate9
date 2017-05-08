@@ -13,7 +13,8 @@ lib.meta {
     keywords.field = keywords
     keywords.ifEmpty = {$plugin.tx_basetemplate8.defaultMetaKeywords}
 
-    og:site_name = My fancy Website
+    og:site_name = {$plugin.tx_basetemplate8.websiteName}
+    og:site_name.insertData = 1
     og:locale = en_GB
     og:locale:alternate {
         attribute = property

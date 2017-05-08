@@ -43,7 +43,8 @@ page {
         10 = TEXT
         10 {
             field = subtitle // title
-            noTrimWrap = |<title>| :: My fancy Website</title>|
+            noTrimWrap = |<title>| :: {$plugin.tx_basetemplate8.websiteName}</title>|
+            noTrimWrap.stdWrap.insertData = 1
         }
     }
     
@@ -53,7 +54,7 @@ page {
 
     // include JavaScript before </head>:
     includeJSLibs {
-        
+
     }
 
     // include JavaScript before </body>:
@@ -120,7 +121,7 @@ page {
 ###################################
 
 // news title as <title> tag:
-[globalVar = GP:tx_news_pi1|news > 0]
+#[globalVar = GP:tx_news_pi1|news > 0]
 # page.headerData {
 #     10 >
 #     10 = RECORDS
@@ -130,10 +131,11 @@ page {
 #         tables = tx_news_domain_model_news
 #         conf {
 #             tx_news_domain_model_news >
-#             tx_news_domain_model_news = TEXT
+#             tx_news_domain_model_newgits = TEXT
 #             tx_news_domain_model_news {
 #                 field = title
-#                 noTrimWrap = |<title>|  :: My fancy Website</title>|
+#                 noTrimWrap = |<title>| :: {$plugin.tx_basetemplate8.websiteName}</title>|
+#                 noTrimWrap.stdWrap.insertData = 1
 #             }
 #         }
 #     }
