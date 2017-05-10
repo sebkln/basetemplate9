@@ -6,7 +6,13 @@
         <!-- render this partial and provide all variables in it -->
         <f:render partial="Success" arguments="{_all}" />
     
-        
-        <f:format.raw>{content_0}</f:format.raw>
+        <div class="content">
+            <div class="col--left">
+                <f:format.raw>{content_0}</f:format.raw>
+            </div>
+            <div class="col--right">
+                <f:format.raw>{content_1}</f:format.raw>
+            </div>
+        </div>
     </div>
 </f:section>

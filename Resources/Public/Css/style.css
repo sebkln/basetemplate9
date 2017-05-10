@@ -25,3 +25,20 @@ body {
     margin-bottom: 4em;
     text-align: center;
 }
+
+
+.content {
+    overflow: auto;
+}
+
+
+.col--left {
+    float: left;
+    width: 60%;
+}
+
+
+.col--right {
+    float: right;
+    width: 35%;
+}

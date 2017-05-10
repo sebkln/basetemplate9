@@ -19,7 +19,7 @@ mod.web_layout.BackendLayouts {
                             }
                             2 {
                                 name = LLL:EXT:basetemplate8/Resources/Private/Language/locallang_be.xlf:BackendLayouts.col.sidebar
-                                colPos = 2
+                                colPos = 1
                             }
                         }
                     }

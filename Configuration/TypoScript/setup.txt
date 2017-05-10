@@ -12,17 +12,6 @@
 
 
 
-// not a part of fluid_styled_content (yet):
-# styles.content.getRight = CONTENT
-# styles.content.getRight {
-#     table = tt_content
-#     select.orderBy = sorting
-#     select.where = colPos=2
-# }
-
-
-
-
 page = PAGE
 page {
     typeNum = 0
@@ -69,7 +58,7 @@ page {
     10 {
         file.stdWrap.cObject = CASE
         file.stdWrap.cObject {
-                // select a layout template depending on the page's BackendLayout:
+            // select a layout template depending on the page's BackendLayout:
             key.data = pagelayout
             // numeration = ID of BackendLayout!
             1 = TEXT
@@ -99,7 +88,19 @@ page {
             success = TEXT
             success.value = <h2>You successfully installed the Template Extension.</h2><p>Now you can start implementing your own templates and configurations. Have fun!</p>
 
-            content_0 < styles.content.get
+            content_0 = CONTENT
+            content_0 {
+                table = tt_content
+                select.orderBy = sorting
+                select.where = colPos=0
+                select.languageField = sys_language_uid
+            }
+
+            content_1 < page.10.variables.content_0
+            content_1.select.where = colPos=1
+
+            # content_2 < page.10.variables.content_0
+            # content_2.select.where = colPos=2
         }
     }
 }
