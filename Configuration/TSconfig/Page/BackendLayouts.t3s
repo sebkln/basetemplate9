@@ -26,6 +26,6 @@ mod.web_layout.BackendLayouts {
                 }
             }
         }
-        icon = EXT:basetemplate8/Resources/Public/Images/BackendLayouts/BELayout_9-3.png
+        icon = EXT:basetemplate8/Resources/Public/Images/BackendLayouts/BELayout_9-3.svg
     }
 }
