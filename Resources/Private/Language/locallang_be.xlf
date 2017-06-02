@@ -3,6 +3,9 @@
     <file source-language="en" datatype="plaintext" original="messages" date="2016-06-18T12:03:24Z" product-name="basetemplate8">
         <header/>
         <body>
+			<trans-unit id="constants.label.websiteName">
+				<source>The website's name (in title tag and Open Graph meta tag)</source>
+			</trans-unit>
             <trans-unit id="constants.label.defaultDescription">
                 <source>Default meta description</source>
             </trans-unit>

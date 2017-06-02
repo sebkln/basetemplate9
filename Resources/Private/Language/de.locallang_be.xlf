@@ -4,6 +4,10 @@
           product-name="basetemplate8" target-language="de">
         <header/>
         <body>
+			<trans-unit id="constants.label.websiteName">
+				<source>The website's name (in title tag and Open Graph meta tag)</source>
+				<target>Der Name der Website (für das title-Tag und Open Graph Meta-Element)</target>
+			</trans-unit>
             <trans-unit id="constants.label.defaultDescription">
                 <source>Default meta description</source>
                 <target>Standard Meta-Beschreibung</target>
