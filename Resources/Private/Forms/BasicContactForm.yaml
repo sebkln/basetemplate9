@@ -1,0 +1,77 @@
+
+identifier: BasicContactForm
+label: 'Basic contact form'
+type: Form
+prototypeName: basetemplate8
+finishers:
+  -
+    options:
+      subject: 'Your message: {subject}'
+      recipientAddress: your.company@example.com
+      recipientName: 'Your Company name'
+      senderAddress: '{email}'
+      senderName: '{name}'
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: 'true'
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+renderables:
+  -
+    identifier: page-1
+    label: 'Contact Form'
+    type: Page
+    renderables:
+      -
+        defaultValue: ''
+        identifier: name
+        label: Name
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Name
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        identifier: subject
+        label: Subject
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Subject
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        identifier: email
+        label: Email
+        type: Text
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Email address'
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: EmailAddress
+      -
+        defaultValue: ''
+        identifier: message
+        label: Message
+        type: Textarea
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: ''
+        validators:
+          -
+            identifier: NotEmpty
+  -
+    identifier: summarypage
+    label: 'Summary page'
+    type: SummaryPage

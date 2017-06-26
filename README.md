@@ -16,6 +16,7 @@ If you intend using **Bootstrap**, you definitely should check [bootstrap_packag
 - essential **TypoScript** Setup, which you can integrate as a Static Template
 - basic **TSconfig**, e.g. useful RTE configurations.
 - both TypoScript and TSconfig are divided into smaller partials for more clarity
+- example setup for adjusting the new **YAML-based form framework**
 - all configurations can be easily adjusted
 
 ## Installation

@@ -1,0 +1,7 @@
+plugin.tx_form.settings.yamlConfigurations {
+    100 = EXT:basetemplate8/Configuration/Yaml/Form/CustomFormSetup.yaml
+}
+
+module.tx_form.settings.yamlConfigurations {
+    100 = EXT:basetemplate8/Configuration/Yaml/Form/CustomFormSetup.yaml
+}
