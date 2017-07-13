@@ -1,0 +1,35 @@
+/****************************************************************************************
+# Add your own classes for the RTE CKEditor
+#
+# Any declarations set here are only for display in the Editor, not in the Frontend.
+# ***************************************************************************************/
+
+.intro {
+	color: #888;
+	font-size: 1.5em;
+}
+
+.btn {
+	background-color: #555;
+	color: #fff;
+	margin: 0 0 10px;
+	display: inline-block;
+	vertical-align: middle;
+	white-space: nowrap;
+	cursor: pointer;
+	border: none;
+	padding: 0 1em;
+	line-height: 3;
+	border-radius: 5px;
+}
+
+.list--checkmark {
+	list-style: none;
+}
+
+
+.list--checkmark li:before {
+	color: green;
+	content: '✓';
+	padding-right: .5em;
+}

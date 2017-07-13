@@ -1,0 +1,72 @@
+# Load default processing options
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+  externalPlugins:
+    wordcount:
+      resource: "EXT:basetemplate8/Resources/Public/JavaScript/Plugins/wordcount/plugin.js"
+      showCharCount: true
+
+  config:
+    # The default styles for the editor. You can add your custom styles here.
+    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:basetemplate8/Resources/Public/Css/rte_ckeditor.css"]
+    stylesSet:
+      # Alignment styles:
+      - { name: "Align left", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-left' }}
+      - { name: "Align center", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-center' }}
+      - { name: "Align right", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-right' }}
+      - { name: "Align justify", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-justify' }}
+
+      # Block level styles:
+      - { name: "Introduction", element: "p", attributes: { 'class': 'intro' }}
+      - { name: 'Checkmark list', element: 'ul', attributes: { 'class': 'list--checkmark' } }
+
+      # Inline styles:
+      - { name: "Button", element: "a", attributes: { 'class': 'btn' } }
+
+    # Available block elements:
+    format_tags: "p;h1;h2;h3;h4;pre"
+
+    # Sort buttons:
+    toolbarGroups:
+      - { name: styles, groups: [ styles, format ] }
+      - { name: basicstyles, groups: [ basicstyles ] }
+      - { name: paragraph, groups: [ list, indent, blocks, align ] }
+      - { name: links, groups: [ links ] }
+      - { name: clipboard, groups: [ clipboard, cleanup, undo ] }
+      - { name: editing, groups: [ spellchecker ] }
+      - { name: insert, groups: [ insert ] }
+      - { name: tools, groups: [ table, specialchar ] }
+      - { name: document, groups: [ mode ] }
+      - { name: colors }
+
+    removeButtons:
+      - Anchor
+      - Underline
+      - Strike
+      - BGColor
+
+    justifyClasses:
+      - text-left
+      - text-center
+      - text-right
+      - text-justify
+
+    extraPlugins:
+      - justify
+      - specialchar
+      - showblocks
+      - wordcount
+      - colorbutton
+
+    removePlugins:
+      - image
+
+    # colorbutton config:
+    colorButton_colorsPerRow: 8
+    colorButton_colors: 'F26C4F,3A89C9,1B325F'

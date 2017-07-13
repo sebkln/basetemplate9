@@ -34,7 +34,7 @@ RTE.default {
         image, textcolor, insertcharacter,
         chMode, removeformat, pastetoggle, pastebehaviour, findreplace,
         table, tableproperties, toggleborders, tablerestyle,
-        rowproperties, rowinsertabove,rowinsertunder, rowdelete, rowsplit, 
+        rowproperties, rowinsertabove,rowinsertunder, rowdelete, rowsplit,
         columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit,
         cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge
     )
@@ -50,7 +50,7 @@ RTE.default {
         image, textcolor, insertcharacter, bar,
         chMode, removeformat, pastetoggle, pastebehaviour, findreplace, linebreak,
         table, tableproperties, toggleborders, tablerestyle, bar,
-        rowproperties, rowinsertabove,rowinsertunder, rowdelete, rowsplit, bar, 
+        rowproperties, rowinsertabove,rowinsertunder, rowdelete, rowsplit, bar,
         columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit, bar,
         cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge
     )
@@ -67,7 +67,7 @@ RTE.default {
 RTE.default {
     buttons.formatblock.removeItems = address,h5,h6,article,footer,header,nav,section,aside,div
     removeTags := addToList (address,h5,h6,article,footer,header,nav,section,aside,div)
-    
+
     // want to remove 'blockstyle' items in the select menu? Just delete them in the rte.css.
     proc.allowedClasses := removeFromList(csc-frame-frame1, csc-frame-frame2)
 }
@@ -89,7 +89,7 @@ RTE {
     default {
         // Your classes have to exist in this css file!
         // This stylesheet is NOT to be included in frontend, though. Just put the classes in your normal Frontend stylesheet, too.
-        contentCSS = EXT:basetemplate8/Resources/Public/Css/rte.css
+        contentCSS = EXT:basetemplate8/Resources/Public/Css/rtehtmlarea.css
     }
 
     // blockstyle: Set a class for a block element, e.g.: <p>
