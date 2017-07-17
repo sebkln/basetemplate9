@@ -34,16 +34,22 @@ editor:
 
     # Sort buttons:
     toolbarGroups:
-      - { name: styles, groups: [ styles, format ] }
-      - { name: basicstyles, groups: [ basicstyles ] }
-      - { name: paragraph, groups: [ list, indent, blocks, align ] }
-      - { name: links, groups: [ links ] }
-      - { name: clipboard, groups: [ clipboard, cleanup, undo ] }
-      - { name: editing, groups: [ spellchecker ] }
-      - { name: insert, groups: [ insert ] }
-      - { name: tools, groups: [ table, specialchar ] }
-      - { name: document, groups: [ mode ] }
+      - { name: styles, groups: [ format, styles ] }
       - { name: colors }
+      - { name: cleanup }
+      - { name: basicstyles }
+      - { name: align }
+      - { name: list }
+      - { name: links }
+      - { name: paragraph, groups: [ indent, blocks ] }
+      - { name: insert }
+      - { name: clipboard, groups: [ clipboard, undo ] }
+      - { name: table }
+      - { name: tabletools }
+      - { name: others }
+      - { name: editing, groups: [ find, selection, spellchecker ] }
+      - { name: tools }
+      - { name: mode }
 
     removeButtons:
       - Anchor
@@ -63,6 +69,7 @@ editor:
       - showblocks
       - wordcount
       - colorbutton
+      - find
 
     removePlugins:
       - image
@@ -70,3 +77,10 @@ editor:
     # colorbutton config:
     colorButton_colorsPerRow: 8
     colorButton_colors: 'F26C4F,3A89C9,1B325F'
+
+# Additional processing of tags and attributes
+processing:
+  allowTags:
+    - wbr
+  HTMLparser_db:
+    noAttrib: br,wbr
