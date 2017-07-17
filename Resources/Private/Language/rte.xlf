@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2017-07-17T19:53:16Z"
+          product-name="basetemplate8">
+        <header/>
+        <body>
+            <trans-unit id="styles.align.left">
+                <source>Align left</source>
+            </trans-unit>
+            <trans-unit id="styles.align.center">
+                <source>Align center</source>
+            </trans-unit>
+            <trans-unit id="styles.align.right">
+                <source>Align right</source>
+            </trans-unit>
+            <trans-unit id="styles.align.justify">
+                <source>Align justify</source>
+            </trans-unit>
+            <trans-unit id="styles.p.intro">
+                <source>Introduction</source>
+            </trans-unit>
+            <trans-unit id="styles.list.checkmark">
+                <source>Checkmark list</source>
+            </trans-unit>
+            <trans-unit id="styles.a.btn">
+                <source>Button</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
