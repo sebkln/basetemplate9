@@ -17,10 +17,10 @@ editor:
     contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:basetemplate8/Resources/Public/Css/rte_ckeditor.css"]
     stylesSet:
       # Alignment styles:
-      - { name: "LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.align.left", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-left' }}
-      - { name: "LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.align.center", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-center' }}
-      - { name: "LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.align.right", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-right' }}
-      - { name: "LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.align.justify", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'align-justify' }}
+      - { name: "LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.align.left", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'text-left' }}
+      - { name: "LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.align.center", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'text-center' }}
+      - { name: "LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.align.right", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'text-right' }}
+      - { name: "LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.align.justify", element: ['h1', 'h2', 'h3', 'h4','h5', 'h6', 'p', 'td', 'th'], attributes: { 'class': 'text-justify' }}
 
       # Block level styles:
       - { name: "LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.p.intro", element: "p", attributes: { 'class': 'intro' }}
