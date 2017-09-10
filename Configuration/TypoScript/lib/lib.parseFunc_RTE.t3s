@@ -63,9 +63,6 @@ lib.parseFunc_RTE {
             remapTag.DIV = P
             nonWrappedTag = P
             innerStdWrap_all.ifBlank = &nbsp;
-            // disable the default bodytext class:
-            # addAttributes.P.class = bodytext
-            # addAttributes.P.class.setOnly=blank
         }
     }
     nonTypoTagStdWrap {
