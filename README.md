@@ -16,7 +16,6 @@ If you intend using **Bootstrap**, you definitely should check [bootstrap_packag
 - essential **TypoScript** Setup, which you can integrate as a Static Template
 - basic **TSconfig**, e.g. useful RTE configurations.
 - both TypoScript and TSconfig are divided into smaller partials for more clarity
-- example setup for adjusting the new **YAML-based form framework**
 - all configurations can be easily adjusted
 
 ## Installation
@@ -28,6 +27,13 @@ If you intend using **Bootstrap**, you definitely should check [bootstrap_packag
 3. Open TYPO3 extension Manager and install the extension. From that moment the TSconfig is used.
 4. Include it as a Static Template in your Root Template.
 5. Begin to add your Templates and adapt the configuration. Make it yours!
+
+## Syntax highlighting
+With TYPO3 version 8.7.2, the file extensions *.typoscript* and *.tsconfig* have become the new defaults.
+Add these to your editor to benefit from TypoScript syntax highlighting again.
+In PhpStorm, open **Settings/Preferences** and add the patterns `*.typoscript` and `*.tsconfig` to TypoScript in **Editor | Code Style**. 
+
+## Footnotes
 
 <a name="namingconvention">[1]</a> TYPO3 extensions have some naming conventions.
 See: https://typo3.org/extensions/extension-keys/

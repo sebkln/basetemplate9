@@ -4,10 +4,10 @@
 ###################################
 
 
-<INCLUDE_TYPOSCRIPT: source="DIR: ./lib" extensions="t3s">
-<INCLUDE_TYPOSCRIPT: source="DIR: ./plugin" extensions="t3s">
+<INCLUDE_TYPOSCRIPT: source="DIR: ./lib" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR: ./plugin" extensions="typoscript">
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:basetemplate8/Configuration/TypoScript/config.t3s">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:basetemplate8/Configuration/TypoScript/config.typoscript">
 
 
 
@@ -34,7 +34,7 @@ page {
             noTrimWrap.stdWrap.insertData = 1
         }
     }
-    
+
     includeCSS {
         style = EXT:basetemplate8/Resources/Public/Css/style.css
         style.media = all
@@ -51,7 +51,7 @@ page {
 
     // include JavaScript before </body>:
     includeJSFooterlibs {
-        
+
     }
 
     10 = FLUIDTEMPLATE
@@ -83,7 +83,7 @@ page {
         settings {
             mySetting = 0
         }
- 
+
         variables {
             success = TEXT
             success.value = <h2>You successfully installed the Template Extension.</h2><p>Now you can start implementing your own templates and configurations. Have fun!</p>

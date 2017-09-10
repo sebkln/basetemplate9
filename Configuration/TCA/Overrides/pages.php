@@ -3,42 +3,42 @@ defined('TYPO3_MODE') or die();
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'basetemplate8',
-        'Configuration/TSconfig/Page/BackendLayouts.t3s',
+        'Configuration/TSconfig/Page/BackendLayouts.tsconfig',
         'Template Extension: BackendLayouts'
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'basetemplate8',
-        'Configuration/TSconfig/Page/mod.t3s',
+        'Configuration/TSconfig/Page/mod.tsconfig',
         'Template Extension: Module TSconfig [mod]'
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'basetemplate8',
-        'Configuration/TSconfig/Page/rte_ckeditor.t3s',
+        'Configuration/TSconfig/Page/rte_ckeditor.tsconfig',
         'Template Extension: Config for NEW Rich Text Editor (CKEditor)'
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'basetemplate8',
-        'Configuration/TSconfig/Page/rtehtmlarea.t3s',
+        'Configuration/TSconfig/Page/rtehtmlarea.tsconfig',
         'Template Extension: Config for OLD Rich Text Editor (htmlArea RTE)'
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'basetemplate8',
-        'Configuration/TSconfig/Page/TCAdefaults.t3s',
+        'Configuration/TSconfig/Page/TCAdefaults.tsconfig',
         'Template Extension: Default values for records [TCAdefaults]'
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'basetemplate8',
-        'Configuration/TSconfig/Page/TCEFORM.t3s',
+        'Configuration/TSconfig/Page/TCEFORM.tsconfig',
         'Template Extension: Form fields TSconfig [TCEFORM]'
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'basetemplate8',
-        'Configuration/TSconfig/Page/TCEMAIN.t3s',
+        'Configuration/TSconfig/Page/TCEMAIN.tsconfig',
         'Template Extension: Page permissions et al. [TCEMAIN]'
 );
