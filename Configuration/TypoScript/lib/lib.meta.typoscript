@@ -3,7 +3,7 @@ lib.meta {
     X-UA-Compatible = IE=edge
     X-UA-Compatible.attribute = http-equiv
 
-    viewport = width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;
+    viewport = width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0
 
     description.field = description
     description.ifEmpty = {$plugin.tx_basetemplate8.defaultMetaDescription}
