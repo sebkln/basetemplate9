@@ -3,7 +3,11 @@ config {
     headerComment.if.isTrue = {$plugin.tx_basetemplate8.headerComment}
 
     // Secure Headers (see https://www.owasp.org/index.php/OWASP_Secure_Headers_Project):
-    additionalHeaders = strict-transport-security: maxage= 31536000; includeSubdomains | x-frame-options: SAMEORIGIN | X-XSS-Protection: 1; mode=block | X-Content-Type-Options: nosniff | X-Powered-By: nothing
+    additionalHeaders.10.header = strict-transport-security: maxage= 31536000; includeSubdomains
+    additionalHeaders.20.header = x-frame-options: SAMEORIGIN
+    additionalHeaders.30.header = X-XSS-Protection: 1; mode=block
+    additionalHeaders.40.header = X-Content-Type-Options: nosniff
+    additionalHeaders.50.header = X-Powered-By: nothing
 
     // alternative PageRenderer:
     # pageRendererTemplateFile = EXT:basetemplate8/Resources/Private/Templates/PageRenderer.html
@@ -32,7 +36,7 @@ config {
     language = en
     locale_all = en_GB.utf8
     sys_language_uid = 0
- 
+
     sys_language_overlay = hideNonTranslated
     sys_language_mode = content_fallback
 
