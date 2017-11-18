@@ -61,13 +61,11 @@ page {
             // select a layout template depending on the page's BackendLayout:
             key.data = pagelayout
             // numeration = ID of BackendLayout!
-            1 = TEXT
-            1.value = EXT:basetemplate8/Resources/Private/Templates/DemoTemplate.html
             // important! If you set BackendLayouts through TSconfig, you MUST use the prefix 'pagets__':
-            # pagets__1 = TEXT
-            # pagets__1.value = EXT:basetemplate8/Resources/Private/Templates/DemoTemplate.html
-            # 2 = TEXT
-            # 2.value = EXT:basetemplate8/Resources/Private/Templates/Template-9-3.html
+            pagets__1 = TEXT
+            pagets__1.value = EXT:basetemplate8/Resources/Private/Templates/DemoTemplate.html
+            # pagets__2 = TEXT
+            # pagets__2.value = EXT:basetemplate8/Resources/Private/Templates/Template-9-3.html
             default = TEXT
             default.value = EXT:basetemplate8/Resources/Private/Templates/DemoTemplate.html
         }
