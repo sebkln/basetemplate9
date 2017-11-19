@@ -5,4 +5,10 @@
 mod {
     web_list.enableDisplayBigControlPanel = activated
     web_list.enableClipBoard = activated
+
+    // Specify the default language:
+    # SHARED {
+    #     defaultLanguageLabel = English
+    #     defaultLanguageFlag = gb
+    # }
 }
