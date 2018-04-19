@@ -3,7 +3,7 @@ config {
     headerComment.if.isTrue = {$plugin.tx_basetemplate8.headerComment}
 
     // Secure Headers (see https://www.owasp.org/index.php/OWASP_Secure_Headers_Project):
-    additionalHeaders.10.header = strict-transport-security: maxage= 31536000; includeSubdomains
+    additionalHeaders.10.header = strict-transport-security: max-age= 31536000; includeSubdomains
     additionalHeaders.20.header = x-frame-options: SAMEORIGIN
     additionalHeaders.30.header = X-XSS-Protection: 1; mode=block
     additionalHeaders.40.header = X-Content-Type-Options: nosniff
