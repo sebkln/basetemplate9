@@ -36,7 +36,7 @@ In PhpStorm, open **Settings/Preferences** and add the patterns `*.typoscript` a
 ## Footnotes
 
 <a name="namingconvention">[1]</a> TYPO3 extensions have some naming conventions.
-See: https://typo3.org/extensions/extension-keys/
+See: https://extensions.typo3.org/about-extension-repository/extension-keys/
 
 <a name="underscores">[2]</a> Also **be very careful when using underscores** in your extension name! It is highly encouraged to avoid them.
 If you e.g. choose the name `client_templates_2016`, you'll have to use **two notations!**
