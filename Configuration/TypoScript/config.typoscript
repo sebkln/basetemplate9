@@ -9,11 +9,6 @@ config {
     additionalHeaders.40.header = X-Content-Type-Options: nosniff
     additionalHeaders.50.header = X-Powered-By: nothing
 
-    // alternative PageRenderer:
-    # pageRendererTemplateFile = EXT:basetemplate8/Resources/Private/Templates/PageRenderer.html
-
-    doctype = html5
-
     noPageTitle = 1
 
     // Prefixing all links to get absolute link paths (i.e mandatory for RSS feeds from EXT:news):

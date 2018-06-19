@@ -69,10 +69,6 @@ page {
             10 = EXT:basetemplate8/Resources/Private/Partials/
         }
 
-        settings {
-            mySetting = 0
-        }
-
         variables {
             success = TEXT
             success.value = <h2>You successfully installed the Template Extension.</h2><p>Now you can start implementing your own templates and configurations. Have fun!</p>
@@ -93,15 +89,6 @@ page {
         }
     }
 }
-
-
-
-
-// Condition with custom Fluid setting:
-// Use it in templates: <f:if condition="settings.mySetting">do something</f:if>
-# [globalVar = TSFE:id=17]
-# page.10.settings.mySetting = 1
-# [global]
 
 
 
