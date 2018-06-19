@@ -8,11 +8,11 @@ lib.parseFunc_RTE {
         // prevent empty <p> tags in nested lists:
         ol {
             stripNL = 1
-            stdWrap.parseFunc = < lib.parseFunc
+            stdWrap.parseFunc =< lib.parseFunc
         }
         ul {
             stripNL = 1
-            stdWrap.parseFunc = < lib.parseFunc
+            stdWrap.parseFunc =< lib.parseFunc
         }
         table {
             stripNL = 1
@@ -31,7 +31,7 @@ lib.parseFunc_RTE {
             HTMLtableCells {
                 // Recursive call to self but without wrapping non-wrapped cell content
                 default.stdWrap {
-                    parseFunc = < lib.parseFunc_RTE
+                    parseFunc =< lib.parseFunc_RTE
                     parseFunc.nonTypoTagStdWrap.encapsLines.nonWrappedTag =
                 }
                 addChr10BetweenParagraphs = 1
