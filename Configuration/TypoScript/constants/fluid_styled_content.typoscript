@@ -1,16 +1,24 @@
-styles.content {
-    defaultHeaderType = 2
+styles {
+    templates {
+        templateRootPath = EXT:basetemplate8/Resources/Private/EXT/fluid_styled_content/Templates/
+        partialRootPath = EXT:basetemplate8/Resources/Private/EXT/fluid_styled_content/Partials/
+        layoutRootPath = EXT:basetemplate8/Resources/Private/EXT/fluid_styled_content/Layouts/
+    }
 
-    textmedia {
-        maxW = 600
-        maxWInText = 300
+    content {
+        defaultHeaderType = 2
 
-        linkWrap {
-            width = 800m
-            height = 600m
-            lightboxEnabled = 1
-            lightboxCssClass = lightbox
-            lightboxRelAttribute = lightbox[{field:uid}]
+        textmedia {
+            maxW = 600
+            maxWInText = 300
+
+            linkWrap {
+                width = 800m
+                height = 600m
+                lightboxEnabled = 1
+                lightboxCssClass = lightbox
+                lightboxRelAttribute = lightbox[{field:uid}]
+            }
         }
     }
 }
