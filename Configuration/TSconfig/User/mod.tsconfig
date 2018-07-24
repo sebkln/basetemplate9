@@ -1,0 +1,12 @@
+####################################
+# Backend module configuration     #
+####################################
+
+mod {
+    // Hide all static_info_tables in list view:
+    # web_list.table.static_countries.hideTable = 1
+    # web_list.table.static_country_zones.hideTable = 1
+    # web_list.table.static_currencies.hideTable = 1
+    # web_list.table.static_languages.hideTable = 1
+    # web_list.table.static_territories.hideTable = 1
+}
