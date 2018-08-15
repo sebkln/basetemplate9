@@ -6,32 +6,32 @@
         <body>
             <trans-unit id="styles.align.left">
                 <source>Align left</source>
-				<target>linksbündig</target>
-			</trans-unit>
+                <target>linksbündig</target>
+            </trans-unit>
             <trans-unit id="styles.align.center">
                 <source>Align center</source>
-				<target>zentrieren</target>
-			</trans-unit>
+                <target>zentrieren</target>
+            </trans-unit>
             <trans-unit id="styles.align.right">
                 <source>Align right</source>
-				<target>rechtsbündig</target>
-			</trans-unit>
+                <target>rechtsbündig</target>
+            </trans-unit>
             <trans-unit id="styles.align.justify">
                 <source>Align justify</source>
-				<target>Blocksatz</target>
-			</trans-unit>
-			<trans-unit id="styles.p.intro">
-				<source>Introduction</source>
-				<target>Einleitung</target>
-			</trans-unit>
-			<trans-unit id="styles.list.checkmark">
-				<source>Checkmark list</source>
-				<target>Häkchen-Liste</target>
-			</trans-unit>
-			<trans-unit id="styles.a.btn">
-				<source>Button</source>
-				<target>Button</target>
-			</trans-unit>
+                <target>Blocksatz</target>
+            </trans-unit>
+            <trans-unit id="styles.p.intro">
+                <source>Introduction</source>
+                <target>Einleitung</target>
+            </trans-unit>
+            <trans-unit id="styles.list.checkmark">
+                <source>Checkmark list</source>
+                <target>Häkchen-Liste</target>
+            </trans-unit>
+            <trans-unit id="styles.a.btn">
+                <source>Button</source>
+                <target>Button</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
