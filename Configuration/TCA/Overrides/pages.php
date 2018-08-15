@@ -16,13 +16,7 @@ defined('TYPO3_MODE') or die();
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'basetemplate8',
         'Configuration/TSconfig/Page/rte_ckeditor.tsconfig',
-        'Template Extension: Config for NEW Rich Text Editor (CKEditor)'
-);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-        'basetemplate8',
-        'Configuration/TSconfig/Page/rtehtmlarea.tsconfig',
-        'Template Extension: Config for OLD Rich Text Editor (htmlArea RTE)'
+        'Template Extension: Config for Rich Text Editor (CKEditor)'
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
