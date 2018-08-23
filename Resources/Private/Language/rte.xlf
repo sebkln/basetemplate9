@@ -22,6 +22,15 @@
             <trans-unit id="styles.list.checkmark">
                 <source>Checkmark list</source>
             </trans-unit>
+            <trans-unit id="styles.table.striped">
+                <source>Table (striped)</source>
+            </trans-unit>
+            <trans-unit id="styles.table.bordered">
+                <source>Table (bordered)</source>
+            </trans-unit>
+            <trans-unit id="styles.table.combined">
+                <source>Table (striped + bordered)</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

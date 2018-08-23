@@ -28,6 +28,18 @@
                 <source>Checkmark list</source>
                 <target>Häkchen-Liste</target>
             </trans-unit>
+            <trans-unit id="styles.table.striped">
+                <source>Table (striped)</source>
+                <target>Tabelle (gestreift)</target>
+            </trans-unit>
+            <trans-unit id="styles.table.bordered">
+                <source>Table (bordered)</source>
+                <target>Tabelle (umrahmt)</target>
+            </trans-unit>
+            <trans-unit id="styles.table.combined">
+                <source>Table (striped + bordered)</source>
+                <target>Tabelle (gestreift + umrahmt)</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

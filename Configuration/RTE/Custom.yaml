@@ -25,6 +25,9 @@ editor:
       # Block level styles:
       - { name: "LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.p.intro", element: "p", attributes: { 'class': 'intro' }}
       - { name: 'LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.list.checkmark', element: 'ul', attributes: { 'class': 'list--checkmark' } }
+      - { name: 'LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.table.striped', element: 'table', attributes: { 'class': 'ce-table  ce-table-striped' } }
+      - { name: 'LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.table.bordered', element: 'table', attributes: { 'class': 'ce-table  ce-table-bordered' } }
+      - { name: 'LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.table.combined', element: 'table', attributes: { 'class': 'ce-table  ce-table-striped  ce-table-bordered' } }
 
     # Available block elements:
     format_tags: "p;h1;h2;h3;h4;pre"

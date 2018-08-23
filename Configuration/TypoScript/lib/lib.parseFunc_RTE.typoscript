@@ -1,0 +1,18 @@
+lib.parseFunc_RTE {
+    externalBlocks {
+        table {
+            stripNL = 1
+            stdWrap {
+                HTMLparser = 1
+                HTMLparser {
+                    tags.table.fixAttrib.class {
+                        default = ce-table
+                        always = 1
+                        list := addToList(ce-table, ce-table-striped, ce-table-bordered)
+                    }
+                    keepNonMatchedTags = 1
+                }
+            }
+        }
+    }
+}

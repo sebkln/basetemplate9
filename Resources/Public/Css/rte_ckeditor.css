@@ -48,3 +48,11 @@
     content: '✓';
     padding-right: .5em;
 }
+
+
+.ce-table { width: 100%; max-width: 100%; }
+.ce-table th, .ce-table td { padding: 0.5em 0.75em; vertical-align: top; }
+.ce-table thead th { border-bottom: 2px solid #dadada; }
+.ce-table th, .ce-table td { border-top: 1px solid #dadada; }
+.ce-table-striped tbody tr:nth-of-type(odd) { background-color: rgba(0,0,0,.05); }
+.ce-table-bordered th, .ce-table-bordered td { border: 1px solid #dadada; }
