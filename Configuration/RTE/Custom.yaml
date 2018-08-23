@@ -26,9 +26,6 @@ editor:
       - { name: "LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.p.intro", element: "p", attributes: { 'class': 'intro' }}
       - { name: 'LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.list.checkmark', element: 'ul', attributes: { 'class': 'list--checkmark' } }
 
-      # Inline styles:
-      - { name: "LLL:EXT:basetemplate8/Resources/Private/Language/rte.xlf:styles.a.btn", element: "a", attributes: { 'class': 'btn' } }
-
     # Available block elements:
     format_tags: "p;h1;h2;h3;h4;pre"
 

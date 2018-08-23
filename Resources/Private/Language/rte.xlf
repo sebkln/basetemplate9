@@ -22,9 +22,6 @@
             <trans-unit id="styles.list.checkmark">
                 <source>Checkmark list</source>
             </trans-unit>
-            <trans-unit id="styles.a.btn">
-                <source>Button</source>
-            </trans-unit>
         </body>
     </file>
 </xliff>

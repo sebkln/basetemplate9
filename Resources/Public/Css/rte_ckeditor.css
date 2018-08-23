@@ -38,21 +38,6 @@
 }
 
 
-.btn {
-    background-color: #555;
-    color: #fff;
-    margin: 0 0 10px;
-    display: inline-block;
-    vertical-align: middle;
-    white-space: nowrap;
-    cursor: pointer;
-    border: none;
-    padding: 0 1em;
-    line-height: 3;
-    border-radius: 5px;
-}
-
-
 .list--checkmark {
     list-style: none;
 }

@@ -28,10 +28,6 @@
                 <source>Checkmark list</source>
                 <target>Häkchen-Liste</target>
             </trans-unit>
-            <trans-unit id="styles.a.btn">
-                <source>Button</source>
-                <target>Button</target>
-            </trans-unit>
         </body>
     </file>
 </xliff>
