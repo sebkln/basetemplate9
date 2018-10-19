@@ -26,25 +26,4 @@ config {
     // Deactivate all HTML comments from TYPO3, e.g.:
     // <!--  CONTENT ELEMENT, uid:37/text [begin] -->
     disablePrefixComment = 1
-
-
-    // Language settings:
-    language = en
-    locale_all = en_GB.utf8
-    sys_language_uid = 0
-
-    sys_language_overlay = hideNonTranslated
-    sys_language_mode = content_fallback
 }
-
-
-
-
-// first foreign language:
-#[globalVar = GP:L=1]
-# config {
-#     language = de
-#     locale_all = de_DE.utf8
-#     sys_language_uid = 1
-# }
-# [global]
