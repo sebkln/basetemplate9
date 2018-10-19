@@ -14,6 +14,7 @@ config {
     // Prefixing all links to get absolute link paths (i.e mandatory for RSS feeds from EXT:news):
     absRefPrefix = /
     linkVars = L(0-1)
+    prefixLocalAnchors = all
 
 
     // Write the email address in Unicode. This works even without JavaScript enabled!
@@ -34,12 +35,6 @@ config {
 
     sys_language_overlay = hideNonTranslated
     sys_language_mode = content_fallback
-
-
-    // RealURL related:
-    prefixLocalAnchors = all
-    simulateStaticDocuments = 0
-    tx_realurl_enable = 1
 }
 
 
