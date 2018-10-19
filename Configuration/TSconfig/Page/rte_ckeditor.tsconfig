@@ -2,4 +2,4 @@
 # Rich Text Editor (rte_ckeditor)  #
 ####################################
 
-RTE.default.preset = basetemplate8_rte
+RTE.default.preset = basetemplate9_rte

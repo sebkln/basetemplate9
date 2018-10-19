@@ -6,11 +6,11 @@ TCEFORM {
     tt_content {
         header_layout {
             altLabels {
-                1 = LLL:EXT:basetemplate8/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.1
-                2 = LLL:EXT:basetemplate8/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.2
-                3 = LLL:EXT:basetemplate8/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.3
-                4 = LLL:EXT:basetemplate8/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.4
-                100 = LLL:EXT:basetemplate8/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.100
+                1 = LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.1
+                2 = LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.2
+                3 = LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.3
+                4 = LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.4
+                100 = LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:header_layout.altLabels.100
             }
             keepItems = 1,2,3,4,100
         }

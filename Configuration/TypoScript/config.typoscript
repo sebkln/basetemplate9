@@ -1,6 +1,6 @@
 config {
-    headerComment = {$plugin.tx_basetemplate8.headerComment}
-    headerComment.if.isTrue = {$plugin.tx_basetemplate8.headerComment}
+    headerComment = {$plugin.tx_basetemplate9.headerComment}
+    headerComment.if.isTrue = {$plugin.tx_basetemplate9.headerComment}
 
     // Secure Headers (see https://www.owasp.org/index.php/OWASP_Secure_Headers_Project):
     additionalHeaders.10.header = strict-transport-security: max-age= 31536000; includeSubdomains

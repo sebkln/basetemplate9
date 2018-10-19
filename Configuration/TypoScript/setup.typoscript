@@ -1,5 +1,5 @@
 ###################################
-# Starter template TYPO3 v8 LTS   #
+# Starter template TYPO3 v9 LTS   #
 # MAIN SETUP                      #
 ###################################
 
@@ -7,7 +7,7 @@
 <INCLUDE_TYPOSCRIPT: source="DIR: ./lib" extensions="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR: ./plugin" extensions="typoscript">
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:basetemplate8/Configuration/TypoScript/config.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:basetemplate9/Configuration/TypoScript/config.typoscript">
 
 
 
@@ -30,13 +30,13 @@ page {
         10 = TEXT
         10 {
             field = subtitle // title
-            noTrimWrap = |<title>| :: {$plugin.tx_basetemplate8.websiteName}</title>|
+            noTrimWrap = |<title>| :: {$plugin.tx_basetemplate9.websiteName}</title>|
             noTrimWrap.stdWrap.insertData = 1
         }
     }
 
     includeCSS {
-        style = EXT:basetemplate8/Resources/Public/Css/style.css
+        style = EXT:basetemplate9/Resources/Public/Css/style.css
         style.media = all
     }
 
@@ -54,19 +54,19 @@ page {
             // numeration = ID of BackendLayout!
             // important! If you set BackendLayouts through TSconfig, you MUST use the prefix 'pagets__':
             pagets__1 = TEXT
-            pagets__1.value = EXT:basetemplate8/Resources/Private/Templates/DemoTemplate.html
+            pagets__1.value = EXT:basetemplate9/Resources/Private/Templates/DemoTemplate.html
             # pagets__2 = TEXT
-            # pagets__2.value = EXT:basetemplate8/Resources/Private/Templates/Template-9-3.html
+            # pagets__2.value = EXT:basetemplate9/Resources/Private/Templates/Template-9-3.html
             default = TEXT
-            default.value = EXT:basetemplate8/Resources/Private/Templates/DemoTemplate.html
+            default.value = EXT:basetemplate9/Resources/Private/Templates/DemoTemplate.html
         }
 
         layoutRootPaths {
-            10 = EXT:basetemplate8/Resources/Private/Layouts/
+            10 = EXT:basetemplate9/Resources/Private/Layouts/
         }
 
         partialRootPaths {
-            10 = EXT:basetemplate8/Resources/Private/Partials/
+            10 = EXT:basetemplate9/Resources/Private/Partials/
         }
 
         variables {
@@ -116,7 +116,7 @@ page {
 #             tx_news_domain_model_news = TEXT
 #             tx_news_domain_model_news {
 #                 field = title
-#                 noTrimWrap = |<title>| :: {$plugin.tx_basetemplate8.websiteName}</title>|
+#                 noTrimWrap = |<title>| :: {$plugin.tx_basetemplate9.websiteName}</title>|
 #                 noTrimWrap.stdWrap.insertData = 1
 #             }
 #         }

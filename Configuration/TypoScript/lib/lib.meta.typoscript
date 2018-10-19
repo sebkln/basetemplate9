@@ -6,14 +6,14 @@ lib.meta {
     viewport = width=device-width, initial-scale=1.0
 
     description.field = description
-    description.ifEmpty = {$plugin.tx_basetemplate8.defaultMetaDescription}
+    description.ifEmpty = {$plugin.tx_basetemplate9.defaultMetaDescription}
     dc.description < .description
     og:description < .description
 
     keywords.field = keywords
-    keywords.ifEmpty = {$plugin.tx_basetemplate8.defaultMetaKeywords}
+    keywords.ifEmpty = {$plugin.tx_basetemplate9.defaultMetaKeywords}
 
-    og:site_name = {$plugin.tx_basetemplate8.websiteName}
+    og:site_name = {$plugin.tx_basetemplate9.websiteName}
     og:site_name.insertData = 1
     og:locale = en_GB
     og:locale:alternate {

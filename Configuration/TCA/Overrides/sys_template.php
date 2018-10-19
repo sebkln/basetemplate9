@@ -2,7 +2,7 @@
 defined('TYPO3_MODE') or die();
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    'basetemplate8',
+    'basetemplate9',
     'Configuration/TypoScript',
     'Website Templates'
 );
