@@ -1,4 +1,4 @@
-<INCLUDE_TYPOSCRIPT: source="DIR: ./constants" extensions="typoscript">
+@import 'EXT:basetemplate9/Configuration/TypoScript/constants/*.typoscript'
 
 plugin.tx_basetemplate9 {
     #cat=Website Templates/text/10; type=string;label=LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:constants.label.websiteName

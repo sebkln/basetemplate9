@@ -4,11 +4,10 @@
 ###################################
 
 
-<INCLUDE_TYPOSCRIPT: source="DIR: ./lib" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR: ./plugin" extensions="typoscript">
+@import 'EXT:basetemplate9/Configuration/TypoScript/lib/*.typoscript'
+@import 'EXT:basetemplate9/Configuration/TypoScript/plugin/*.typoscript'
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:basetemplate9/Configuration/TypoScript/config.typoscript">
-
+@import 'EXT:basetemplate9/Configuration/TypoScript/config.typoscript'
 
 
 
