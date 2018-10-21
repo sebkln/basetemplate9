@@ -24,14 +24,6 @@ page {
             value = <meta name="robots" content="noindex" />
             if.isTrue.data = page:no_search
         }
-
-        // <title> tag (may be replaced by news title - see below):
-        10 = TEXT
-        10 {
-            field = subtitle // title
-            noTrimWrap = |<title>| :: {$plugin.tx_basetemplate9.websiteName}</title>|
-            noTrimWrap.stdWrap.insertData = 1
-        }
     }
 
     includeCSS {
@@ -92,36 +84,6 @@ page {
 
 
 
-
-
-
-
-###################################
-# OPTIONAL:                       #
-# Configurations for EXT:news     #
-###################################
-
-// news title as <title> tag:
-#[globalVar = GP:tx_news_pi1|news > 0]
-# page.headerData {
-#     10 >
-#     10 = RECORDS
-#     10 {
-#         source = {GP:tx_news_pi1|news}
-#         source.insertData = 1
-#         tables = tx_news_domain_model_news
-#         conf {
-#             tx_news_domain_model_news >
-#             tx_news_domain_model_news = TEXT
-#             tx_news_domain_model_news {
-#                 field = title
-#                 noTrimWrap = |<title>| :: {$plugin.tx_basetemplate9.websiteName}</title>|
-#                 noTrimWrap.stdWrap.insertData = 1
-#             }
-#         }
-#     }
-# }
-# [global]
 
 
 

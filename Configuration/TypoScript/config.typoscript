@@ -9,8 +9,6 @@ config {
     additionalHeaders.40.header = X-Content-Type-Options: nosniff
     additionalHeaders.50.header = X-Powered-By: nothing
 
-    noPageTitle = 1
-
     // Prefixing all links to get absolute link paths (i.e mandatory for RSS feeds from EXT:news):
     absRefPrefix = /
     linkVars = L(0-1)
@@ -26,4 +24,22 @@ config {
     // Deactivate all HTML comments from TYPO3, e.g.:
     // <!--  CONTENT ELEMENT, uid:37/text [begin] -->
     disablePrefixComment = 1
+
+
+    // Append website name to title.
+    // If a SEO title for a page is used, we don't want to append the website name automatically:
+    pageTitle.noTrimWrap = ## | {$plugin.tx_basetemplate9.websiteName}#
+    pageTitle.noTrimWrap.splitChar = #
+    pageTitle.noTrimWrap.if.isFalse.data = page:seo_title
 }
+
+
+// Don't append website name to news records with an alternative title:
+[request.getQueryParams() ['tx_news_pi1'] > 0]
+    config.pageTitle.noTrimWrap.if.isFalse {
+        data >
+        dataWrap = DB:tx_news_domain_model_news:{GP:tx_news_pi1|news}:alternative_title
+        wrap3 = {|}
+        insertData = 1
+    }
+[end]
