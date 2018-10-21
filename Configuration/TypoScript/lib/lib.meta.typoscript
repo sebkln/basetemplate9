@@ -7,8 +7,6 @@ lib.meta {
 
     description.field = description
     description.ifEmpty = {$plugin.tx_basetemplate9.defaultMetaDescription}
-    dc.description < .description
-    og:description < .description
 
     keywords.field = keywords
     keywords.ifEmpty = {$plugin.tx_basetemplate9.defaultMetaKeywords}
