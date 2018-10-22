@@ -98,3 +98,43 @@ plugin.tx_news {
     }
 }
 
+
+
+
+###################################
+# OPTIONAL:                       #
+# page Object for News-RSS-Feed   #
+###################################
+# pageNewsRSS = PAGE
+# pageNewsRSS {
+#     typeNum = 9818
+#
+#     config {
+#         disableAllHeaderCode = 1
+#         xhtml_cleaning = none
+#         admPanel = 0
+#         metaCharset = utf-8
+#         additionalHeaders = Content-Type:application/xml;charset=utf-8
+#         disablePrefixComment = 1
+#     }
+#
+#     10 < tt_content.list.20.news_pi1
+#     10 {
+#         switchableControllerActions {
+#             News {
+#                 1 = list
+#             }
+#         }
+#
+#         // News:
+#         settings < plugin.tx_news.settings
+#         settings {
+#             # categories = 9
+#             # categoryConjunction = notor
+#             limit = 30
+#             detailPid = 9
+#             startingpoint = 15
+#             format = xml
+#         }
+#     }
+# }
