@@ -3,27 +3,8 @@
 ####################################
 
 plugin.tx_news {
-    _LOCAL_LANG {
-        default {
-            # newsdate = date
-            # newsdownload = Download file
-            # dateFormat = %B %e, %Y
-        }
-        de {
-            # newsdate = Datum
-            # newsdownload = Datei herunterladen
-            # dateFormat = %d.%m.%Y
-        }
-        en {
-            # newsdate = date
-            # newsdownload = Download file
-            # dateFormat = %B %e, %Y
-        }
-    }
-
-
     view {
-        // define several paths for partials and templates:
+        // Define several paths for partials and templates:
         partialRootPaths >
         partialRootPaths {
             10 = EXT:news/Resources/Private/Partials/
@@ -40,17 +21,17 @@ plugin.tx_news {
     settings {
         # listPid = 13
 
-        // remove default stylesheet:
+        // Remove default stylesheet:
         cssFile >
 
-        // remove placeholder image:
+        // Remove placeholder image:
         displayDummyIfNoMedia = 0
 
         detail {
             // Remove social media links:
-            detail.showSocialShareButtons = 0
+            showSocialShareButtons = 0
 
-            // media configuration:
+            // Media configuration:
             media {
                 image {
                     maxWidth = 800
@@ -80,7 +61,7 @@ plugin.tx_news {
                 itemsPerPage = 10
                 insertAbove = 0
                 insertBelow = 1
-                prevNextHeaderTags = 0
+                prevNextHeaderTags = 1
                 maximumNumberOfLinks = 3
             }
         }
@@ -94,6 +75,24 @@ plugin.tx_news {
             channel {
                 category = {$plugin.tx_news.rss.channel.category}
             }
+        }
+    }
+
+
+    // Modify translation:
+    _LOCAL_LANG {
+        default {
+            # dateFormat = %B %e, %Y
+            # more-link = read more
+            # back-link = back
+            # list_nonewsfound = No news were found.
+        }
+
+        de {
+            # dateFormat = %d.%m.%Y
+            # more-link = weiterlesen
+            # back-link = zurück
+            # list_nonewsfound = Es wurden keine Artikel gefunden.
         }
     }
 }
