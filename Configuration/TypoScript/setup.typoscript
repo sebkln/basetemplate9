@@ -3,11 +3,11 @@
 # MAIN SETUP                      #
 ###################################
 
-
 @import 'EXT:basetemplate9/Configuration/TypoScript/lib/*.typoscript'
 @import 'EXT:basetemplate9/Configuration/TypoScript/plugin/*.typoscript'
 
 @import 'EXT:basetemplate9/Configuration/TypoScript/config.typoscript'
+
 
 
 
@@ -27,7 +27,7 @@ page {
     }
 
     includeCSS {
-        style = EXT:basetemplate9/Resources/Public/Css/style.css
+        style = EXT:basetemplate9/Resources/Public/Css/style.min.css
         style.media = all
     }
 
@@ -42,14 +42,19 @@ page {
         file.stdWrap.cObject {
             // select a layout template depending on the page's BackendLayout:
             key.data = pagelayout
-            // numeration = ID of BackendLayout!
-            // important! If you set BackendLayouts through TSconfig, you MUST use the prefix 'pagets__':
-            pagets__1 = TEXT
-            pagets__1.value = EXT:basetemplate9/Resources/Private/Templates/DemoTemplate.html
-            # pagets__2 = TEXT
-            # pagets__2.value = EXT:basetemplate9/Resources/Private/Templates/Template-9-3.html
-            default = TEXT
-            default.value = EXT:basetemplate9/Resources/Private/Templates/DemoTemplate.html
+            // Important! If you set BackendLayouts through TSconfig, you MUST use the prefix 'pagets__':
+            pagets__1_column = TEXT
+            pagets__1_column.value = EXT:basetemplate9/Resources/Private/Templates/1Column.html
+            pagets__2_columns_50_50 = TEXT
+            pagets__2_columns_50_50.value = EXT:basetemplate9/Resources/Private/Templates/2Columns-50-50.html
+            pagets__2_columns_66_33 = TEXT
+            pagets__2_columns_66_33.value = EXT:basetemplate9/Resources/Private/Templates/2Columns-66-33.html
+            pagets__2_columns_33_66 = TEXT
+            pagets__2_columns_33_66.value = EXT:basetemplate9/Resources/Private/Templates/2Columns-33-66.html
+            pagets__3_columns = TEXT
+            pagets__3_columns.value = EXT:basetemplate9/Resources/Private/Templates/3Columns.html
+            pagets__1_column = TEXT
+            pagets__1_column.value = EXT:basetemplate9/Resources/Private/Templates/1Column.html
         }
 
         layoutRootPaths {
@@ -61,9 +66,6 @@ page {
         }
 
         variables {
-            success = TEXT
-            success.value = <h2>You successfully installed the Template Extension.</h2><p>Now you can start implementing your own templates and configurations. Have fun!</p>
-
             content_0 = CONTENT
             content_0 {
                 table = tt_content
@@ -75,8 +77,14 @@ page {
             content_1 < page.10.variables.content_0
             content_1.select.where = colPos=1
 
-            # content_2 < page.10.variables.content_0
-            # content_2.select.where = colPos=2
+            content_2 < page.10.variables.content_0
+            content_2.select.where = colPos=2
+
+            contentTop < page.10.variables.content_0
+            contentTop.select.where = colPos=10
+
+            contentBottom < page.10.variables.content_0
+            contentBottom.select.where = colPos=20
         }
     }
 }

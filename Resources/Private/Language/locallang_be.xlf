@@ -15,6 +15,8 @@
             <trans-unit id="constants.label.headerComment">
                 <source>Add a copyright to the HTML source (as part of the TYPO3 comment)</source>
             </trans-unit>
+
+
             <trans-unit id="header_layout.altLabels.1">
                 <source>(h1) Page headline</source>
             </trans-unit>
@@ -30,14 +32,43 @@
             <trans-unit id="header_layout.altLabels.100">
                 <source>Hidden</source>
             </trans-unit>
-            <trans-unit id="BackendLayouts.title.1">
-                <source>Default Layout (2 columns)</source>
+
+
+            <trans-unit id="BackendLayouts.title.1_column">
+                <source>1 column (default)</source>
             </trans-unit>
-            <trans-unit id="BackendLayouts.col.main">
+            <trans-unit id="BackendLayouts.title.3_columns">
+                <source>3 columns</source>
+            </trans-unit>
+            <trans-unit id="BackendLayouts.title.2_columns_66_33">
+                <source>2 columns (66/33)</source>
+            </trans-unit>
+            <trans-unit id="BackendLayouts.title.2_columns_33_66">
+                <source>2 columns (33/66)</source>
+            </trans-unit>
+            <trans-unit id="BackendLayouts.title.2_columns_50_50">
+                <source>2 columns (50/50)</source>
+            </trans-unit>
+            <trans-unit id="BackendLayouts.column.main">
                 <source>Main content</source>
             </trans-unit>
-            <trans-unit id="BackendLayouts.col.sidebar">
+            <trans-unit id="BackendLayouts.column.sidebar">
                 <source>Sidebar</source>
+            </trans-unit>
+            <trans-unit id="BackendLayouts.column.top">
+                <source>Top</source>
+            </trans-unit>
+            <trans-unit id="BackendLayouts.column.bottom">
+                <source>Bottom</source>
+            </trans-unit>
+            <trans-unit id="BackendLayouts.column.left">
+                <source>Left column</source>
+            </trans-unit>
+            <trans-unit id="BackendLayouts.column.middle">
+                <source>Middle column</source>
+            </trans-unit>
+            <trans-unit id="BackendLayouts.column.right">
+                <source>Right column</source>
             </trans-unit>
         </body>
     </file>

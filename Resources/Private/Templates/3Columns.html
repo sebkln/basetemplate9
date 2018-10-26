@@ -1,0 +1,25 @@
+<!-- call the layout (filename without suffix) -->
+<f:layout name="DefaultLayout" />
+
+<f:section name="body">
+    <div class="o-layout  o-layout--large">
+        <div class="o-layout__item  u-1/1  u-margin-bottom-large">
+            <f:format.raw>{contentTop}</f:format.raw>
+        </div>
+        
+        <div class="o-layout__item  u-1/1  u-1/2@phablet  u-1/3@tablet  u-margin-bottom-large">
+            <f:format.raw>{content_0}</f:format.raw>
+        </div>
+        
+        <div class="o-layout__item  u-1/1  u-1/2@phablet  u-1/3@tablet  u-margin-bottom-large">
+            <f:format.raw>{content_1}</f:format.raw>
+        </div>
+        
+        <div class="o-layout__item  u-1/1  u-1/2@phablet  u-1/3@tablet  u-margin-bottom-large">
+            <f:format.raw>{content_2}</f:format.raw>
+        </div>
+        <div class="o-layout__item  u-1/1">
+            <f:format.raw>{contentBottom}</f:format.raw>
+        </div>
+    </div>
+</f:section>
