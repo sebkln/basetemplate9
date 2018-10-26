@@ -17,15 +17,6 @@ page {
 
     meta < lib.meta
 
-    headerData {
-        // set 'noindex' if page property 'Include in Search' is disabled:
-        5 = TEXT
-        5 {
-            value = <meta name="robots" content="noindex" />
-            if.isTrue.data = page:no_search
-        }
-    }
-
     includeCSS {
         style = EXT:basetemplate9/Resources/Public/Css/style.min.css
         style.media = all
