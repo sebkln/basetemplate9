@@ -44,8 +44,8 @@ page {
             pagets__2_columns_33_66.value = EXT:basetemplate9/Resources/Private/Templates/2Columns-33-66.html
             pagets__3_columns = TEXT
             pagets__3_columns.value = EXT:basetemplate9/Resources/Private/Templates/3Columns.html
-            pagets__1_column = TEXT
-            pagets__1_column.value = EXT:basetemplate9/Resources/Private/Templates/1Column.html
+            default = TEXT
+            default.value = EXT:basetemplate9/Resources/Private/Templates/1Column.html
         }
 
         layoutRootPaths {
