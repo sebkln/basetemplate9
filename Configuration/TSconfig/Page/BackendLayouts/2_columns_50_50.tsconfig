@@ -1,0 +1,52 @@
+####################################
+# BackendLayout: 50/50             #
+####################################
+
+mod.web_layout.BackendLayouts {
+    2_columns_50_50 {
+        title = LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:BackendLayouts.title.2_columns_50_50
+        config {
+            backend_layout {
+                colCount = 2
+                rowCount = 3
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:BackendLayouts.column.top
+                                colspan = 2
+                                colPos = 10
+                            }
+                        }
+                    }
+
+                    2 {
+                        columns {
+                            1 {
+                                name = LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:BackendLayouts.column.left
+                                colPos = 0
+                            }
+
+
+                            2 {
+                                name = LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:BackendLayouts.column.right
+                                colPos = 1
+                            }
+                        }
+                    }
+
+                    3 {
+                        columns {
+                            1 {
+                                name = LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:BackendLayouts.column.bottom
+                                colspan = 2
+                                colPos = 20
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        icon = EXT:basetemplate9/Resources/Public/Images/BackendLayouts/BELayout_2_columns_50_50.svg
+    }
+}

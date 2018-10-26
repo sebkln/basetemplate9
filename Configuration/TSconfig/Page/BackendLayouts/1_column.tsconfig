@@ -1,0 +1,26 @@
+####################################
+# BackendLayout: 1 column          #
+####################################
+
+mod.web_layout.BackendLayouts {
+    1_column {
+        title = LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:BackendLayouts.title.1_column
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:BackendLayouts.column.main
+                                colPos = 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        icon = EXT:basetemplate9/Resources/Public/Images/BackendLayouts/BELayout_1_column.svg
+    }
+}
