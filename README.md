@@ -1,3 +1,5 @@
+![Rocket ship symbol](Resources/Public/Icons/Extension.svg)
+
 # Template Foundation TYPO3 v9 LTS
 
 It is good practice to save your TypoScripts, HTML templates etc. in a separate extension. That way you can
