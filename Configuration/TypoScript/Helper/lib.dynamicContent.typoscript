@@ -1,0 +1,93 @@
+####################################
+# Dynamic content in Fluid         #
+####################################
+/*
+ * Render content in Fluid templates in a variable way.
+ *
+ * All data values are optional. By default, colPos '0' of the current page is rendered.
+ *
+ * Examples:
+ * <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '10'}"/>
+ * <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0', wrap: '<div class=\"hero\">|</div>', elementWrap: '<div class=\"element\">|</div>'}" />
+ *
+ * Source: bootstrap_package
+ */
+lib.dynamicContent = COA
+lib.dynamicContent {
+    5 = LOAD_REGISTER
+    5 {
+        // Set the content's column (default: 0):
+        colPos.cObject = TEXT
+        colPos.cObject {
+            field = colPos
+            ifEmpty.cObject = TEXT
+            ifEmpty.cObject {
+                value.current = 1
+                ifEmpty = 0
+            }
+        }
+
+        // Allows to override the current page ID:
+        pageUid.cObject = TEXT
+        pageUid.cObject {
+            field = pageUid
+            ifEmpty.data = TSFE:id
+        }
+
+        // Ensure rendering also works for pages using 'Show Content from Page':
+        contentFromPid.cObject = TEXT
+        contentFromPid.cObject {
+            data = DB:pages:{register:pageUid}:content_from_pid
+            data.insertData = 1
+        }
+
+        // Allows to wrap the rendered content (outer wrap):
+        wrap.cObject = TEXT
+        wrap.cObject {
+            field = wrap
+        }
+
+        // Allows to wrap the rendered content (inner wrap):
+        elementWrap.cObject = TEXT
+        elementWrap.cObject {
+            field = elementWrap
+        }
+    }
+
+    20 = CONTENT
+    20 {
+        table = tt_content
+        select {
+            includeRecordsWithoutDefaultTranslation = 1
+            orderBy = sorting
+            where = {#colPos}={register:colPos}
+            where.insertData = 1
+            pidInList.data = register:pageUid
+            pidInList.override.data = register:contentFromPid
+        }
+
+        renderObj {
+            stdWrap {
+                dataWrap = {register:elementWrap}
+                required = 1
+            }
+        }
+
+        stdWrap {
+            dataWrap = {register:wrap}
+            required = 1
+        }
+    }
+
+    90 = RESTORE_REGISTER
+}
+
+
+/*
+ * This helper extends the above with 'content slide':
+ * If no content element is found by the select command,
+ * each parent page will be searched for content, up to the root page.
+ * The content found first will be rendered.
+*/
+lib.dynamicContentSlide =< lib.dynamicContent
+lib.dynamicContentSlide.20.slide = -1

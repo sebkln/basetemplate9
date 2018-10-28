@@ -4,20 +4,20 @@
 <f:section name="body">
     <div class="o-layout  o-layout--large">
         <div class="o-layout__item  u-1/1">
-            <f:format.raw>{contentTop}</f:format.raw>
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '10'}"/>
         </div>
         
         
         <div class="o-layout__item  u-1/1  u-1/2@desktop">
-            <f:format.raw>{content_0}</f:format.raw>
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}"/>
         </div>
         <div class="o-layout__item  u-1/1  u-1/2@desktop">
-            <f:format.raw>{content_1}</f:format.raw>
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '1'}"/>
         </div>
         
         
         <div class="o-layout__item  u-1/1">
-            <f:format.raw>{contentBottom}</f:format.raw>
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '20'}"/>
         </div>
     </div>
 </f:section>

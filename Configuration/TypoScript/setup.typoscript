@@ -3,6 +3,7 @@
 # MAIN SETUP                      #
 ###################################
 
+@import 'EXT:basetemplate9/Configuration/TypoScript/Helper/*.typoscript'
 @import 'EXT:basetemplate9/Configuration/TypoScript/lib/*.typoscript'
 @import 'EXT:basetemplate9/Configuration/TypoScript/plugin/*.typoscript'
 
@@ -57,25 +58,7 @@ page {
         }
 
         variables {
-            content_0 = CONTENT
-            content_0 {
-                table = tt_content
-                select.orderBy = sorting
-                select.where = colPos=0
-                select.languageField = sys_language_uid
-            }
 
-            content_1 < page.10.variables.content_0
-            content_1.select.where = colPos=1
-
-            content_2 < page.10.variables.content_0
-            content_2.select.where = colPos=2
-
-            contentTop < page.10.variables.content_0
-            contentTop.select.where = colPos=10
-
-            contentBottom < page.10.variables.content_0
-            contentBottom.select.where = colPos=20
         }
     }
 }
