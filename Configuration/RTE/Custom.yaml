@@ -71,15 +71,15 @@ editor:
       - specialchar
       - showblocks
       - wordcount
-      - colorbutton
       - find
+      #- colorbutton
 
     removePlugins:
       - image
 
     # colorbutton config:
-    colorButton_colorsPerRow: 8
-    colorButton_colors: "F26C4F,3A89C9,1B325F"
+    #colorButton_colorsPerRow: 8
+    #colorButton_colors: "F26C4F,3A89C9,1B325F"
 
 # Additional processing of tags and attributes
 processing:
