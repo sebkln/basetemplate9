@@ -13,6 +13,9 @@ editor:
       showCharCount: true
 
   config:
+    # Size of editing area:
+    height: 600
+
     # The default styles for the editor. You can add your custom styles here.
     contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:basetemplate9/Resources/Public/Css/rte_ckeditor.css"]
     stylesSet:
