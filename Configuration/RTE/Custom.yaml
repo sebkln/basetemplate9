@@ -7,11 +7,6 @@ imports:
 # Add configuration for the editor
 # For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
 editor:
-  externalPlugins:
-    wordcount:
-      resource: "EXT:basetemplate9/Resources/Public/JavaScript/Plugins/wordcount/plugin.js"
-      showCharCount: true
-
   config:
     # Size of editing area:
     height: 600
