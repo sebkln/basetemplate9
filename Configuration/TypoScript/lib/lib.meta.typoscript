@@ -6,10 +6,7 @@ lib.meta {
     viewport = width=device-width, initial-scale=1.0
 
     description.field = description
-    description.ifEmpty = {$plugin.tx_basetemplate9.defaultMetaDescription}
-
     keywords.field = keywords
-    keywords.ifEmpty = {$plugin.tx_basetemplate9.defaultMetaKeywords}
 
     og:site_name = {$plugin.tx_basetemplate9.websiteName}
     og:site_name.insertData = 1
