@@ -13,11 +13,11 @@ lib.meta {
 
     og:site_name = {$plugin.tx_basetemplate9.websiteName}
     og:site_name.insertData = 1
-    og:locale = en_GB
-    og:locale:alternate {
-        attribute = property
-        value {
-            1 = de_DE
-        }
-    }
+    # og:locale = en_GB
+    # og:locale:alternate {
+    #     attribute = property
+    #     value {
+    #         1 = de_DE
+    #     }
+    # }
 }
