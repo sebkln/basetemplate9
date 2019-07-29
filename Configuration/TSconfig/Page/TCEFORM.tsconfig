@@ -27,6 +27,13 @@ TCEFORM {
 /*
 // Rename fields:
 TCEFORM.pages.nav_title.label = Navigation Title
+
 // Hide fields:
 TCEFORM.tt_content.layout.disabled = 1
+
+// Change selected TCA config settings:
+TCEFORM.tx_news_domain_model_news.categories.config.size = 30
+
+// Configure fields for a specific CType:
+TCEFORM.tt_content.layout.types.textmedia.addItems.123 = Exclusive textmedia layout
 */
