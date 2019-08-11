@@ -10,11 +10,10 @@ config {
      * Test tool: https://securityheaders.com/
      */
     additionalHeaders.10.header = Strict-Transport-Security: max-age=31536000; includeSubDomains
-    additionalHeaders.20.header = X-Frame-Options: SAMEORIGIN
-    additionalHeaders.30.header = X-XSS-Protection: 1; mode=block
-    additionalHeaders.40.header = X-Content-Type-Options: nosniff
-    additionalHeaders.50.header = X-Powered-By: nothing
-    additionalHeaders.60.header = Referrer-Policy: strict-origin-when-cross-origin
+    additionalHeaders.20.header = X-XSS-Protection: 1; mode=block
+    additionalHeaders.30.header = X-Content-Type-Options: nosniff
+    additionalHeaders.40.header = X-Powered-By: nothing
+    additionalHeaders.50.header = Referrer-Policy: strict-origin-when-cross-origin
 
     /*
      * Feature-Policy Header
@@ -23,7 +22,7 @@ config {
      * More information: https://www.smashingmagazine.com/2018/12/feature-policy/
      * The following line would disable some features, if activated.
      */
-    # additionalHeaders.70.header = Feature-Policy: geolocation 'none'; midi 'none'; camera 'none'; usb 'none'; magnetometer 'none'; accelerometer 'none'; vr 'none'; speaker 'none'; ambient-light-sensor 'none'; gyroscope 'none'; microphone 'none'
+    # additionalHeaders.60.header = Feature-Policy: geolocation 'none'; midi 'none'; camera 'none'; usb 'none'; magnetometer 'none'; accelerometer 'none'; vr 'none'; speaker 'none'; ambient-light-sensor 'none'; gyroscope 'none'; microphone 'none'
 
     /*
      * Content-Security-Policy Header
@@ -31,7 +30,7 @@ config {
      * A more complex HTTP header which needs individual(!) configuration for each website.
      * More information: https://scotthelme.co.uk/content-security-policy-an-introduction/
      */
-    # additionalHeaders.80.header = Content-Security-Policy:
+    additionalHeaders.70.header = Content-Security-Policy: frame-ancestors 'none'
 
 
     // Prefixing all links to get absolute link paths (i.e mandatory for RSS feeds from EXT:news):
