@@ -46,7 +46,7 @@ editor:
       - { name: tabletools }
       - { name: others }
       - { name: editing, groups: [ find, selection, spellchecker ] }
-      - { name: tools }
+      - { name: tools, groups: [ specialchar, insertcharacters ] }
       - { name: mode }
 
     removeButtons:
