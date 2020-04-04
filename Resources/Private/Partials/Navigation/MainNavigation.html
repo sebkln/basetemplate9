@@ -1,0 +1,64 @@
+<f:comment>
+<!--
+    Build your main navigation here.
+-->
+</f:comment>
+
+
+<nav id="nav--header">
+    <ul class="o-nav  o-nav--horizontal  c-nav-main">
+        <f:render section="MainNavigation" arguments="{data: data, mainNavigation: mainNavigation}"/>
+    </ul>
+</nav>
+
+
+<f:section name="MainNavigation">
+    <f:for each="{mainNavigation}" as="item">
+        <li>
+            <a href="{item.link}"
+               class="{f:if(condition: item.active, then: ' is-active')}
+                      {f:if(condition: '({item.data.doktype} == 4 && {item.data.shortcut} == {data.uid})', then: ' is-current')}
+                      {f:if(condition: item.current, then: ' is-current')}"
+                      {f:if(condition: item.target, then: ' target="{item.target}"')}
+                      title="{item.title}">{item.title}</a>
+
+
+            <f:if condition="{item.children}">
+                <f:render section="MainNavigationSublevels" arguments="{data: data, subMenu: item.children}"/>
+            </f:if>
+        </li>
+    </f:for>
+</f:section>
+
+
+<f:comment>
+<!--
+    Recursively render all sub-levels of the main navigation.
+-->
+</f:comment>
+<f:section name="MainNavigationSublevels">
+    <ul class="o-nav">
+        <f:for each="{subMenu}" as="subItem">
+            <f:if condition="{subItem.spacer}">
+                <f:then>
+                    <li class="dropdown-divider">{item.title}</li>
+                </f:then>
+                <f:else>
+                    <li>
+                        <a href="{subItem.link}"
+                           class="{f:if(condition: subItem.active, then: ' is-active')}
+                                  {f:if(condition: '({subItem.data.doktype} == 4 && {subItem.data.shortcut} == {data.uid})', then: ' is-current')}
+                                  {f:if(condition: subItem.current, then: ' is-current')}"
+                                  {f:if(condition: subItem.target, then: ' target="{subItem.target}"')}
+                                  title="{subItem.title}">{subItem.title}</a>
+
+
+                        <f:if condition="{subItem.children}">
+                            <f:render section="MainNavigationSublevels" arguments="{data: data, subMenu: subItem.children}"/>
+                        </f:if>
+                    </li>
+                </f:else>
+            </f:if>
+        </f:for>
+    </ul>
+</f:section>

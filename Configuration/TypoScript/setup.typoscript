@@ -60,5 +60,29 @@ page {
         variables {
 
         }
+
+        dataProcessing {
+            // Main navigation:
+            10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            10 {
+                special = directory
+                special.value = 1
+                levels = 3
+                includeSpacer = 0
+                as = mainNavigation
+            }
+
+            // Meta navigation in footer:
+            /*
+            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            20 {
+            special = directory
+            special.value = 123
+            levels = 2
+            includeSpacer = 0
+            as = metaNavigation
+            }
+            */
+        }
     }
 }
