@@ -1,22 +1,12 @@
-<div class="c-site-header">
-    <div class="o-wrapper">
-        <f:comment>Example: render this partial and provide all variables in it</f:comment>
-        <f:render partial="Success" arguments="{_all}"/>
-    </div>
-</div>
+<f:render partial="Site/Header" arguments="{_all}"/>
 
 
-<div class="c-site-content">
+<div class="c-site-content" id="Content">
     <div class="o-wrapper">
-        <f:comment>section name has to match in template file</f:comment>
+        <f:comment><!-- section name has to match in Fluid template files --></f:comment>
         <f:render section="body"/>
     </div>
 </div>
 
 
-<div class="c-site-footer">
-    <div class="o-wrapper">
-
-
-    </div>
-</div>
+<f:render partial="Site/Footer" arguments="{_all}"/>
