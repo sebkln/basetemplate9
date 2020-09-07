@@ -15,13 +15,15 @@ config {
     additionalHeaders.40.header = Referrer-Policy: strict-origin-when-cross-origin
 
     /*
-     * Feature-Policy Header
+     * Permissions-Policy Header
      *
-     * Enable, disable or modify browser API features, e.g. camera access.
+     * Note: This HTTP header was formerly named 'Feature-Policy', which can be set additionally as a fallback.
+     * Use it to enable, disable or modify browser API features, e.g. camera access.
      * More information: https://www.smashingmagazine.com/2018/12/feature-policy/
-     * The following line would disable some features, if activated.
+     * The following example policies will simply disable some features.
      */
-    # additionalHeaders.50.header = Feature-Policy: geolocation 'none'; midi 'none'; camera 'none'; usb 'none'; magnetometer 'none'; accelerometer 'none'; vr 'none'; speaker 'none'; ambient-light-sensor 'none'; gyroscope 'none'; microphone 'none'
+    # additionalHeaders.50.header = Permissions-Policy: geolocation=(), midi=(), camera=(), usb=(), magnetometer=(), accelerometer=(), vr=(), speaker=(), ambient-light-sensor=(), gyroscope=(), microphone=()
+    # additionalHeaders.51.header = Feature-Policy: geolocation 'none'; midi 'none'; camera 'none'; usb 'none'; magnetometer 'none'; accelerometer 'none'; vr 'none'; speaker 'none'; ambient-light-sensor 'none'; gyroscope 'none'; microphone 'none'
 
     /*
      * Content-Security-Policy Header
