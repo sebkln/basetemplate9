@@ -1,0 +1,38 @@
+{
+	"name": "sebkln/basetemplate9",
+	"type": "typo3-cms-extension",
+	"description": "Templating Starter Kit for TYPO3 v9 LTS. Use it as a base for your website configuration. Add all your Stylesheets, JavaScripts and Templates.",
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"keywords": [
+		"TYPO3",
+		"extension",
+		"sitepackage",
+		"fluid",
+		"typoscript",
+		"tsconfig"
+	],
+	"homepage": "https://www.sebkln.de",
+	"authors": [
+		{
+			"name": "Sebastian Klein",
+			"email": "sebastian@sebkln.de",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"typo3/cms-core": ">=9.5.0 <9.5.99",
+		"typo3/cms-recycler": ">=9.5.0 <9.5.99",
+		"typo3/cms-seo": ">=9.5.0 <9.5.99"
+	},
+	"replace": {
+		"sebkln/basetemplate9": "self.version",
+		"typo3-ter/basetemplate9": "self.version"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "basetemplate9"
+		}
+	}
+}
